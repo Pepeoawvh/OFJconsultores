@@ -1,0 +1,653 @@
+
+body {
+  font-family: Quicksand;
+  background-color: #f8f8f8;
+ }
+
+ #wsp {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  background-color: #25D366;
+  border-radius: 30px;
+  z-index: 999;
+  transition: transform 0.7s;
+}
+#wsp:hover {
+  transform: scale(1.15);
+ }
+ a {
+  color: #111111;
+  text-decoration: none; /* Para eliminar el subrayado por defecto de los enlaces */
+}
+
+/* Estilos para los enlaces cuando se coloca el mouse encima */
+a:hover {
+  cursor: pointer;
+}
+  /* Estilos para header */
+  .cabezal {
+   display: grid;
+   background-image: url(./public/assets/img/17545.jpg);
+   background-size: cover;
+   height: 70px;
+   grid-template-columns: 0.5fr 2fr; /*tres columnas para el navbar*/
+   grid-template-rows: 100%;
+   align-items:center; /*alinear elementos en eje vertical centro*/
+   column-gap: 10px;
+   justify-content: space-around;
+   background-color:#bae0f7
+   }
+
+   #botonmenu {
+    display: none;
+   }
+   .logocabezal {
+    height: 90%; 
+    margin-left: 30px;
+    margin-top: 5px;
+     }
+
+    #menuOcultable {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr); /* Columnas que se ajustan automáticamente */
+     grid-template-rows: 100%;
+     grid-gap: 40px;
+     font-family: 'Merriweather', serif;
+     font-weight: 500;
+     text-align: center;
+     font-size: 100%;
+     justify-self: right;
+     justify-items: right;
+     margin-right: 2vw;
+     }
+     .menutext2 {
+      justify-self: center;
+     }
+       .menutext4 {
+         font-size: 100%;
+         color: white;
+         background-color:#f38e0c;
+         border-radius: 30px;
+         padding: 5px;
+        }
+/* Estilos contenedor Jumbo */
+  .jumbotron {
+   display: grid;
+   height: 70vh;
+   grid-template-columns: 1fr 1fr; 
+   grid-template-rows: auto;
+   background-color: #f8f8f8;
+   contain: content;
+   }      
+    .izqjumbo {
+     display: grid;
+     background-image: url(./public/assets/img/2023-09-11\ 08_43_41-Shell\ Handwriting\ Canvas.jpg);
+     grid-template-rows: 0.5fr 1fr 1fr;
+     justify-content:center;
+     justify-items: center;
+     align-content: center;
+     padding: 5vw;
+     grid-gap: 10px;
+
+     }    
+     .titlejumbotext {
+       display: grid;
+       font-family: Cinzel;
+       font-size: 3vw;
+       font-weight: 800;
+       align-self: flex-start;
+      }
+        #botonbody {
+         font-family: Quicksand;
+         font-weight: 600;
+         background-color: #b6ecfd;
+         border: none;
+         height: 40%;
+         border-radius: 3px;
+         cursor: pointer;
+         transition: background-color 0.7s;
+         }     
+         #botonbody:hover {
+           background-color: #59d5fb;
+         }
+         #botonbody:active {
+           opacity: 0.7;
+         }
+      .jumbosubtext {
+       display: grid;
+       font-family: Cinzel;
+       font-size: 2vw;
+       font-weight: 800;
+       line-height: 150%;
+       }
+    .derjumbo {
+     display: grid;
+     justify-content: center;
+     justify-items: center;
+     width: auto;
+     height: auto;
+     }
+      .imgderjumbo {
+       height: 100%;
+       width: 100%;
+       box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+       object-fit: contain;
+     }
+
+    /* estilos seccion Presentacion */
+  .presentacion {
+   display: grid;
+   grid-template-rows: 1fr;
+   background-color: #c3f0fe;
+   padding: 20px;
+   text-align: center;
+   }
+   h2 {
+     font-size: 30px;
+    }
+   .textopresentacion {
+     font-size: 1.5vw;
+    }
+    /* Estilos seccion Productos */
+  .product-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+   padding: 20px;
+   place-items: center;    
+   }
+    .product {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+     border-radius: 30px;
+     padding-bottom: 20px;
+     transition: transform 0.6s;
+     }
+     .product:hover {
+     transform: scale(1.05);
+     }
+     .productimg {
+       width: 100%;
+       max-width: 400px;
+       height: auto;
+       object-fit: cover;
+       object-position: center;
+       border-top-left-radius: 30px;
+       border-top-right-radius: 30px;
+       margin-bottom: 20px;
+      }
+      .productext {
+       font-family: Quicksand;
+       max-width: 300px;
+       text-align: center;
+       margin-right: 15px;
+       margin-left: 15px;
+      }
+      .vermas {
+       display: flex;
+       justify-content: center; 
+       height: 100%;
+       margin: 50px;
+       }
+       #botonvermas {
+         font-family: Quicksand;
+         font-weight: 600;
+         font-size: 1.5vw;
+         background-color: rgb(241, 238, 231);
+         color: #333;
+         height: 4vw;
+         width: 15vw;
+         cursor: pointer;
+        }
+  /* Estilos seccion Papel */
+  .papelcontainer {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 15px;
+   background-color: #fff;
+   }
+    .papelimg {
+     display: grid;
+     width: 100%;
+     height: 100%;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+     object-fit: cover;
+    }
+    .papelder {
+     display: grid;
+     grid-template-rows: 0,3fr 3fr;
+     align-items: center;
+     justify-items: center;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     padding-right: 80px;
+     padding-left: 80px;
+     }
+      .papelogo {
+       height: 8vw;
+      }
+      .mmmtext {
+       font-size: 1.3vw;
+       color: #333;
+       text-align: center;
+       line-height: 2vw;
+       max-width: 300px;
+        }
+        .firmaliz {
+         width: auto;
+         text-align: right;
+         margin-top: 15px;
+         margin-left: 300px;
+         font-size: 1,2vw;
+        }
+
+        h5 {
+         display: grid;
+         grid-template-columns: 1fr;
+         text-align: center;
+         margin-top: 3.7vw;
+         margin-bottom: 0;
+         font-size: 2vw;
+        }
+  /* Estilos seccion Testimonios */
+  .testimoniocontainer {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 50px;
+   padding: 40px;
+   justify-content: space-around;
+  }
+  .testiside{
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 30px;
+  }
+  .testi{
+   display: grid;
+   grid-template-columns: 3fr 1fr; 
+   height: 17vw;
+   border-radius: 25px;
+   border: 1px solid rgb(224, 224, 224);
+   box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+   padding: 20px;
+   grid-gap: 30px; 
+   transition: transform 0.7s;
+  }
+  .testi:hover{
+   transform: scale(1.03);
+    }
+  .testimage{
+   max-width: 12vw;
+   max-height: auto;
+   align-self: center;
+   border-radius: 90px;
+   box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
+  }
+  .testitext{
+   font-size: 1.2vw;
+   text-align: right;
+   align-self: center;
+   margin: 0px;
+  }
+  /* Estilos Footer */
+  footer {  
+   font-family: Quicksand;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   background-color: #e1e1e1;
+   padding: 20px;
+   grid-gap: 40px;
+   }
+    ul{
+     font-family: Quicksand;
+     height: 100%;
+     width: 100%;
+     line-height: 30px;
+     }
+    h3{
+     margin: 0%;
+    }
+    .footcontact {
+     display: grid;
+     grid-template-rows: 1fr 0.2fr 1fr;
+     grid-gap: 10px;
+     padding-top: 1px;
+     margin-left: 15px;
+     }
+     .rrss {
+       display: grid;
+       grid-template-columns: 0.15fr 0.15fr 0.15fr;
+       justify-content: left;
+       gap: 15px;
+       }
+       .rrssico {
+         display: grid;
+         width: 4vw;
+         height: auto;
+         object-fit: cover;
+       }
+      .doslogos {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        height: fit-content;
+        width: auto;
+        gap: 15px;
+       }
+        .doslogo1 {
+          width: 15vw
+        }
+        .doslogo2 {
+          width: 10.5vw
+        } 
+/* Media query para dispositivos móviles, de 0 a 800px de a */
+@media screen and (max-width: 857px) {
+  
+.cabezal {
+  display: grid;
+  height: 100%;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr; /* Dos columnas en la primera fila */
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  justify-content: space-between; /* Alineación horizontal */
+  background-color:#f1f1f0
+}
+.logocabezal {
+  display: grid;
+  height: 70px;
+  left: 100%;
+  justify-self: start;
+  align-items: center; /* Centra verticalmente */
+}
+
+#botonmenu {
+  display:flex;
+  cursor: pointer;
+  background: none;
+  grid-row: 1; 
+  grid-column: 2; 
+  border: none;
+  font-size: 20px;
+  outline: none;
+  justify-self: end;
+}
+
+#menuOcultable {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-area: 2 / 1 / 2 / -1;
+}
+.hidden {
+  display:none !important
+}
+
+     .menutext4 {
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 2fr;
+      align-self: center; /* Centra verticalmente en su celda */
+    }
+     .contacto {
+      display: flex;
+      justify-content: space-around ;
+      margin: 0px;
+      color: #333;
+      background-color: #eeeeee;
+      border-radius: 20px;
+     }
+  .jumbotron {
+    height: 700px;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 270px 370px;
+    grid-gap: 20px; 
+    padding: 0px;
+   }
+   .izqjumbo {
+     height: auto;
+     grid-gap: 5px; 
+     margin-top: 0px; 
+     }
+     .titlejumbotext {
+       font-size: 4vw;
+       text-align: center; 
+       letter-spacing: 2px;
+       padding-top: 0px;
+       margin-top: 0px;
+      }
+     .formjumbo {
+       grid-template-rows: auto auto; 
+      }
+     .jumbosubtext{
+       text-align: center;
+       margin-top: 10px;
+       font-size: 3.5vw;
+       letter-spacing: 2px;
+       line-height: 5vw;
+      }
+   .derjumbo {
+     display: grid;
+     overflow: hidden;
+     }
+     .imgderjumbo {
+      width: 100%;
+      height: 90%;
+      object-position: top;
+      contain: content;
+      }
+  .presentacion {
+    display: grid;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    }
+    h2 {
+      font-size: 4vw;
+    }
+   .textopresentacion {
+      font-size: 3vw;
+    }
+  .product-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-gap: 20px;
+   padding: 20px;
+   place-items: center;    
+   }
+   .product {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+     border-radius: 30px;
+     padding-bottom: 20px;
+     }
+     .productimg {
+       width: 100%;
+       max-width: 500px;
+       height: auto;
+       object-fit: cover;
+       object-position: center;
+       border-top-left-radius: 30px;
+       border-top-right-radius: 30px;
+       margin-bottom: 20px;
+      }
+     .productext {
+       font-family: Quicksand;
+       max-width: 470px;
+       text-align: center;
+       margin-right: 15px;
+       margin-left: 15px;
+       font-size: 3vw;
+      }
+      .vermas {
+       display: flex;
+       justify-content: center; 
+       align-items: center;
+       height: 100%;
+       margin: 0px;
+       }
+       .botonvermas {
+         font-family: Quicksand;
+         font-size: 3vw;
+         background-color: rgb(241, 238, 231);
+         color: #333;
+         height: 7vw;
+         width: 300px;
+         cursor: pointer;
+         margin-top: 30px;
+        }
+  .papelcontainer {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   background-color: #fff;
+   margin-top: 40px;
+  }
+   .papelimg {
+     display: grid;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-top-right-radius: 30px;
+     border-bottom-right-radius: 30px;
+     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+     object-position: center;
+     }
+   .papelder {
+     display: grid;
+     grid-template-rows: 0.5fr 2fr;
+     align-items: center;
+     justify-items: center;
+     padding-top: 20px;
+     padding-bottom: 15px;
+     padding-right: 15px;
+     padding-left: 15px;
+    }          
+     .papelogo {
+       height: 13vw;
+      }
+     .mmmtext {
+       font-size: 3vw;
+       color: #333;
+       text-align: center;
+       line-height: 4vw;
+       margin: 0px;
+       }
+     .firmaliz {
+       text-align: right;
+       margin-top: 15px;
+       margin-left: 100px;
+       }
+  .testimoniocontainer {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 10px;
+   padding: 20px;
+   }
+   h5{
+   font-size: 5vw;
+   }
+   .testi{
+     display: grid;
+     grid-template-columns: 3fr 1fr; 
+     border-radius: 25px;
+     height: 170px;
+     border: 1px solid rgb(224, 224, 224);
+     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+     padding: 10px;
+     grid-gap: 10px;
+    }
+   .testimage{
+     max-width: 100%;
+     max-height: 100%;
+     border-radius: 80px;
+     box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
+    }
+   .testitext{
+     text-align: right;
+     align-self: center;
+     font-size: 14px;
+    }
+   ul {
+     list-style-type: none;
+     justify-self: center;
+     margin-right: 10px;
+    }
+  footer {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.7fr 0.7fr 0.7fr;
+   row-gap: 10px;
+   justify-items: center;
+   max-width: 100%;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 600;
+   }
+   .footmenu {
+     display: grid;
+     justify-content: center;
+     justify-items: center;
+     margin-right: 10px;
+    }
+   .foothelp{
+     margin-right: 20px;
+    }
+   .footcontact {
+     display: grid;
+     grid-template-rows: 1fr 0.5fr 1fr;
+     grid-gap: 10px;
+     font-size: 15px;
+     padding-top: 0px;
+     margin-left: 18px;
+     }
+     h6{
+       font-size: larger;
+      }
+     .rrss {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       justify-content:center;
+       justify-items:center;
+       gap: 15px;
+       }
+       .rrssico {
+         display: grid;
+         width: 8vw;
+         height: auto;
+         object-fit: cover;
+        }
+     .doslogos {
+       display: grid;
+       grid-template-columns: 0.5fr 0.5fr;
+       grid-template-rows: 1fr;
+       height: auto;
+       width: auto;
+       gap: 15px;
+       }
+       .doslogo1 {
+         width: 35vw;
+       }
+       .doslogo2 {
+         width: 27vw;
+       }
+      }
