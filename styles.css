@@ -59,7 +59,7 @@ a:hover {
      grid-template-columns: repeat(4, 1fr); /* Columnas que se ajustan automáticamente */
      grid-template-rows: 100%;
      grid-gap: 40px;
-     font-family: 'Merriweather', serif;
+     font-family: 'Urbanist', sans-serif;
      font-weight: 500;
      text-align: center;
      font-size: 100%;
@@ -72,80 +72,80 @@ a:hover {
      }
        .menutext4 {
          font-size: 100%;
+         font-family: 'Urbanist', sans-serif;
          color: white;
-         background-color:#f38e0c;
+         background-color:#df993e;
          border-radius: 30px;
-         padding: 5px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-left: 20px;
+         padding-right: 20px;
+         transition: background-color 0.7s;
+
         }
+      .menutext4:hover {
+        background-color: #ff9100;
+      }
+      .menutext4:active {
+        opacity: 0.7;
+      }
 /* Estilos contenedor Jumbo */
   .jumbotron {
    display: grid;
+   background-image: url(./public/assets/img/businessman-reading-contract.png);
+   background-position: bottom;
+   background-size: cover;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   justify-items: center;
    height: 70vh;
-   grid-template-columns: 1fr 1fr; 
-   grid-template-rows: auto;
+   grid-template-columns: auto; 
+   grid-template-rows: 1fr 1fr 1fr;
+   align-items: center;
    background-color: #f8f8f8;
    contain: content;
-   }      
-    .izqjumbo {
-     display: grid;
-     background-image: url(./public/assets/img/2023-09-11\ 08_43_41-Shell\ Handwriting\ Canvas.jpg);
-     grid-template-rows: 0.5fr 1fr 1fr;
-     justify-content:center;
-     justify-items: center;
-     align-content: center;
-     padding: 5vw;
-     grid-gap: 10px;
-
-     }    
+   }     
      .titlejumbotext {
        display: grid;
-       font-family: Cinzel;
-       font-size: 3vw;
-       font-weight: 800;
+       font-family: 'Urbanist', sans-serif;
+       font-size: 300%;
+       font-weight: 500;
        align-self: flex-start;
       }
-        #botonbody {
-         font-family: Quicksand;
-         font-weight: 600;
-         background-color: #b6ecfd;
-         border: none;
-         height: 40%;
-         border-radius: 3px;
-         cursor: pointer;
-         transition: background-color 0.7s;
-         }     
-         #botonbody:hover {
-           background-color: #59d5fb;
-         }
-         #botonbody:active {
-           opacity: 0.7;
-         }
+      #botonbody {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 500;
+        background-color: #b6ecfd;
+        border: none;
+        height: 40%;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.7s;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        }     
+        #botonbody:hover {
+          background-color: #59d5fb;
+        }
+        #botonbody:active {
+          opacity: 0.7;
+        }
       .jumbosubtext {
        display: grid;
-       font-family: Cinzel;
-       font-size: 2vw;
-       font-weight: 800;
+       font-family: 'Urbanist', sans-serif;
+       font-size: 200%;
+       font-weight: 400;
        line-height: 150%;
-       }
-    .derjumbo {
-     display: grid;
-     justify-content: center;
-     justify-items: center;
-     width: auto;
-     height: auto;
+       align-self: flex-start;
      }
-      .imgderjumbo {
-       height: 100%;
-       width: 100%;
-       box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-       object-fit: contain;
-     }
-
     /* estilos seccion Presentacion */
   .presentacion {
+   font-family: 'Urbanist', sans-serif;
    display: grid;
    grid-template-rows: 1fr;
-   background-color: #c3f0fe;
+   background-color: #ecfaff;
    padding: 20px;
    text-align: center;
    }
@@ -153,24 +153,30 @@ a:hover {
      font-size: 30px;
     }
    .textopresentacion {
+     font-family: 'Urbanist', sans-serif;
      font-size: 1.5vw;
     }
     /* Estilos seccion Productos */
   .product-container {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   background-image: url(./public/assets/img/2023-09-11\ 08_43_41-Shell\ Handwriting\ Canvas.jpg);
+   grid-template-columns: 1fr 1fr;
+   justify-content: left;
    grid-gap: 20px;
    padding: 20px;
+   padding-left: 50px ;
+   padding-right: 50px;
    place-items: center;    
    }
     .product {
-     display: flex;
-     flex-direction: column;
+     display: grid;
+     background-color: white;
+     justify-self: left;
+     width: 100%;
      align-items: center;
      text-align: center;
      box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
      border-radius: 30px;
-     padding-bottom: 20px;
      transition: transform 0.6s;
      }
      .product:hover {
@@ -183,11 +189,10 @@ a:hover {
        object-fit: cover;
        object-position: center;
        border-top-left-radius: 30px;
-       border-top-right-radius: 30px;
-       margin-bottom: 20px;
+       border-bottom-left-radius: 30px;
       }
       .productext {
-       font-family: Quicksand;
+       font-family: 'Urbanist', sans-serif;
        max-width: 300px;
        text-align: center;
        margin-right: 15px;
@@ -200,7 +205,7 @@ a:hover {
        margin: 50px;
        }
        #botonvermas {
-         font-family: Quicksand;
+         font-family: 'Urbanist', sans-serif;
          font-weight: 600;
          font-size: 1.5vw;
          background-color: rgb(241, 238, 231);
@@ -245,14 +250,6 @@ a:hover {
        line-height: 2vw;
        max-width: 300px;
         }
-        .firmaliz {
-         width: auto;
-         text-align: right;
-         margin-top: 15px;
-         margin-left: 300px;
-         font-size: 1,2vw;
-        }
-
         h5 {
          display: grid;
          grid-template-columns: 1fr;
@@ -264,6 +261,7 @@ a:hover {
   /* Estilos seccion Testimonios */
   .testimoniocontainer {
    display: grid;
+   font-family: 'Urbanist', sans-serif; 
    grid-template-columns: repeat(2, 1fr);
    grid-gap: 50px;
    padding: 40px;
@@ -311,7 +309,7 @@ a:hover {
    grid-gap: 40px;
    }
     ul{
-     font-family: Quicksand;
+     font-family: 'Urbanist', sans-serif;
      height: 100%;
      width: 100%;
      line-height: 30px;
@@ -321,6 +319,7 @@ a:hover {
     }
     .footcontact {
      display: grid;
+     font-family: 'Urbanist', sans-serif;
      grid-template-rows: 1fr 0.2fr 1fr;
      grid-gap: 10px;
      padding-top: 1px;
@@ -388,15 +387,17 @@ a:hover {
 
 #menuOcultable {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0fr 1fr 1fr 1fr;
   grid-area: 2 / 1 / 2 / -1;
+  align-items: center;
+  margin-right: 25px;
 }
 .hidden {
   display:none !important
 }
 
      .menutext4 {
-      border-radius: 5px;
+      border-radius: 35px;
       padding-left: 10px;
       padding-right: 10px;
       font-size: 2fr;
@@ -429,15 +430,18 @@ a:hover {
        padding-top: 0px;
        margin-top: 0px;
       }
-     .formjumbo {
-       grid-template-rows: auto auto; 
-      }
      .jumbosubtext{
        text-align: center;
        margin-top: 10px;
        font-size: 3.5vw;
        letter-spacing: 2px;
        line-height: 5vw;
+      }
+      #botonbody {
+        display: grid;
+        align-items: center;
+        padding-bottom: 5px;
+
       }
    .derjumbo {
      display: grid;
@@ -490,7 +494,7 @@ a:hover {
        margin-bottom: 20px;
       }
      .productext {
-       font-family: Quicksand;
+       font-family: 'Urbanist', sans-serif;
        max-width: 470px;
        text-align: center;
        margin-right: 15px;

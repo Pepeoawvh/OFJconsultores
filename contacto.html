@@ -6,11 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&family=Cinzel:wght@400;500;600;700;800;900&family=Merriweather:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
- </head>
+  </head>
  <style>
 
 .contactanos{
@@ -37,8 +37,12 @@
   grid-template-rows: repeat(5, 0.5fr);
   justify-items: left;
 }
+select{
+  width: 100%;
+}
 .form-elements > * {
   grid-column: 2;
+  width: 100%;
 }
 .pure-group {
   padding: 0px;
@@ -46,13 +50,17 @@
 .honeypot-field{
   display: none;
 }
-.input {
+input {
   width: 100%;
-  display: block;
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina relleno predeterminado */
 }
+
 #enviar{
   background:#3697f0 ; color : white;
-  justify-self: right;
+  justify-self: center;
+  width: 40%;
+  border-radius: 5px;
 }
 .thankyou_message h2{
   display: grid;
@@ -70,14 +78,14 @@
     </button>
 
     <div class="cabezal">
-      <a class="logocabezal" href="./index.html"><img class="logocabezal" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/oftlogoheadw.png"></a>
-      
+      <img class="logocabezal" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/logonav.svg">
       <button id="botonmenu">☰ Menú</button>
       <div id="menuOcultable" class="hidden">
         <span class="menutext1"></span>
         <span class="menutext2"><a href="#trayectoria">Trayectoria</a></span>
         <span class="menutext3"><a href="#quienesomos">¿Quiénes somos?</a></span>
         <div class="iniciarsesion">
+          <a class="menutext4" href="./contacto.html" >Contáctanos</a>
         </div>
     </div>
     </div>
