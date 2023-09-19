@@ -217,23 +217,33 @@ input {
       </fieldset>
 
       <fieldset class="pure-group">
-        <select class="input" id="message" name="message">
-        <option value="consulta_general">Motivo de consulta</option>
-        <option value="consulta_general">Consulta General</option>
-        <option value="contingencia_sii">Contingencia SII</option>
-        <option value="impuesto_herencias_donaciones">Impuesto Herencias y Donaciones</option>
-        <option value="otros">Otros</option>
-    </select>
-      </fieldset>
-
-      <fieldset class="pure-group">
         <input  class="input" id="email" name="email" type="email" value=""
         required placeholder="Correo Electronico"/>
       </fieldset>
 
       <fieldset class="pure-group">
-        <input  class="input" id="color" name="color" placeholder="RUT" />
+        <input  class="input" id="color" name="rut" placeholder="RUT" />
       </fieldset>
+
+      <fieldset class="pure-group">
+        <select class="input" id="message" name="mensaje">
+         <option value="consulta_general" style="color: rgb(180, 180, 180);">Motivo de consulta</option>
+         <option value="consulta_general">Consulta General</option>
+         <option value="contingencia_sii">Contingencia SII</option>
+         <option value="impuesto_herencias_donaciones">Impuesto Herencias y Donaciones</option>
+         <option value="otros">Otros</option> 
+        </select>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <select class="input" id="modalidad" name="modalidad">
+        <option value="Remoto" style="color: rgb(180, 180, 180);">Modalidad de atención</option>
+        <option value="Remoto">Remoto</option>
+        <option value="Presencial">Presencial</option>
+
+    </select>
+      </fieldset>
+
 
       <fieldset class="pure-group honeypot-field">
         <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
@@ -257,13 +267,6 @@ input {
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" src="form-submission-handler.js"></script>
 <!-- END -->
-<script src="./app.js"></script>
-<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <script src="./app.js"> </script>
-        <script src="./botonocultar.js"> </script>
-        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
         <footer class="futer">
           <div class="footmenu">
             <ul> <h3>Menú</h3>
@@ -291,10 +294,7 @@ input {
                </div>
              </div>
                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-                 <script src="./app.js"> </script>
                  <script src="./botonocultar.js"> </script>
-                 <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
          </footer>     
         
 </body>
