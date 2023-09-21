@@ -36,7 +36,7 @@ a:hover {
   /* Estilos para header */
   .cabezal {
    display: grid;
-   background-image: url(./public/assets/img/17545.jpg);
+   background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
    background-size: cover;
    height: 70px;
    grid-template-columns: 0.5fr 2fr; /*tres columnas para el navbar*/
@@ -103,7 +103,7 @@ a:hover {
     display: grid;
     width: 100%;
     height: 100%;
-    background-image: url(./public/assets/img/businessman-reading-contract.png);
+    background-image: url(./public/assets/img/businessmanReadingContract.jpg);
     background-position: bottom;
     background-size: cover;
    }   
@@ -159,6 +159,7 @@ a:hover {
    background-color: #ecfaff;
    padding: 20px;
    text-align: center;
+   
    }
    h2 {
      font-size: 30px;
@@ -166,18 +167,10 @@ a:hover {
    .textopresentacion {
      font-family: 'Urbanist', sans-serif;
      font-size: 1.5vw;
+     
     }
     /* Estilos seccion Productos */
-  .product-container {
-   display: grid;
-   background-image: url(./public/assets/img/2023-09-11\ 08_43_41-Shell\ Handwriting\ Canvas.jpg);
-   grid-template-columns: 1fr;   
-   grid-gap: 20px;
-   padding: 20px;
-   padding-left: 50px;
-   padding-right: 50px;
-   place-items: center;    
-   }
+
     .product {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
@@ -188,14 +181,7 @@ a:hover {
      width: 100%;
      align-items: center;
      text-align: center;
-     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-     border-radius: 5px;
-     transition: transform 0.6s;
-     object-fit: contain;
-     }
-     .product:hover {
-     transform: scale(1.05);
-     }
+    }
      .productimg {
        height: 100%;
        max-width: 400px;
@@ -221,6 +207,8 @@ a:hover {
    background-color: #fff;
    justify-items: center;
    align-items: center;
+   background-image: url(./public/assets/img/ShellHandwritingCanvas.jpg);
+
    }
       .logoimgsomos {
         width: 30%;
@@ -257,7 +245,7 @@ a:hover {
   .testimoniocontainer {
    display: grid;
    font-family: 'Urbanist', sans-serif; 
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: 1fr 1fr;
    grid-gap: 50px;
    padding: 40px;
    justify-content: space-around;
@@ -297,7 +285,8 @@ a:hover {
   /* Estilos Footer */
   footer {  
    font-family: Quicksand;
-   background-image: url(./public/assets/img/2023-09-11\ 08_43_41-Shell\ Handwriting\ Canvas.jpg);
+   background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
+   background-size: cover;
    display:grid;
    grid-template-columns: 1fr 1fr 1fr;
    background-color: #ebfaff;
@@ -324,8 +313,8 @@ a:hover {
      }
      .rrss {
        display: grid;
-       grid-template-columns: 0.15fr 0.15fr 0.15fr;
-       justify-content: left;
+       grid-template-columns: 1fr;
+       justify-items: center;
        gap: 15px;
        }
        .rrssico {
@@ -334,19 +323,6 @@ a:hover {
          height: auto;
          object-fit: cover;
        }
-      .doslogos {
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        height: fit-content;
-        width: auto;
-        gap: 15px;
-       }
-        .doslogo1 {
-          width: 15vw
-        }
-        .doslogo2 {
-          width: 10.5vw
-        } 
 /* Media query para dispositivos móviles, de 0 a 800px de a */
 @media screen and (max-width: 857px) {
   
@@ -463,14 +439,6 @@ a:hover {
    .textopresentacion {
       font-size: 3vw;
     }
-  .product-container {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-gap: 20px;
-   padding: 20px;
-   place-items: center;    
-   }
    .product {
      display: flex;
      flex-direction: column;
@@ -544,8 +512,8 @@ a:hover {
        }
   .testimoniocontainer {
    display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr
    grid-gap: 10px;
    padding: 20px;
    }

@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="styles.css"> 
   </head>
  <style>
-  #MenuOcultable{
-    display: contents;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
    .logocabezal {
     width: 25%; 
     height: auto;
@@ -28,8 +23,7 @@
   grid-template-rows: 1fr;
   justify-content: center;
   justify-items: center;
-  padding-top: 40px;
-  
+  padding-top: 40px; 
 }
 .textos {
   display: grid;
@@ -110,8 +104,8 @@ input {
      }
      .rrss {
        display: grid;
-       grid-template-columns: 0.15fr 0.15fr 0.15fr;
-       justify-content: left;
+       grid-template-columns: 1fr;
+       justify-items: center;
        gap: 15px;
        }
        .rrssico {
@@ -120,19 +114,6 @@ input {
          height: auto;
          object-fit: cover;
        }
-      .doslogos {
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        height: fit-content;
-        width: auto;
-        gap: 15px;
-       }
-        .doslogo1 {
-          width: 15vw
-        }
-        .doslogo2 {
-          width: 10.5vw
-        } 
 @media screen and (max-width: 857px) {
   
   .cabezal {
@@ -218,13 +199,14 @@ input {
       </fieldset>
 
       <fieldset class="pure-group">
+        <input  class="input" id="color" name="rut" placeholder="RUT" />
+      </fieldset>
+
+      <fieldset class="pure-group">
         <input  class="input" id="email" name="email" type="email" value=""
         required placeholder="Correo Electronico"/>
       </fieldset>
 
-      <fieldset class="pure-group">
-        <input  class="input" id="color" name="rut" placeholder="RUT" />
-      </fieldset>
 
       <fieldset class="pure-group">
         <select class="input" id="message" name="mensaje">
@@ -257,7 +239,7 @@ input {
 
     <!-- Customise the Thankyou Message People See when they submit the form: -->
     <div class="thankyou_message" style="display:none;">
-      <h2>Gracias por contactarnos. Nos pondremos en contacto contigo</h2>
+      <h2>Gracias!. Nos pondremos en contacto contigo</h2>
       <form>
        <button class="boton" id="botonbody" type="submit"><a href="./index.html">Volver</a></button> 
       </form>
@@ -272,8 +254,7 @@ input {
           <div class="footmenu">
             <ul> <h3>Menú</h3>
               <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">¿Quiénes somos?</a></li>
-              <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Preguntas Frecuentes</a></li>
-              <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Terminos y Condiciones</a></li>
+              <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Trayectoria Profesional</a></li>
             </ul>
           </div>
           <div class="foothelp">
@@ -289,9 +270,7 @@ input {
                </p>
              </div>
                <div class="rrss">
-                <a href="https://web.whatsapp.com/send?phone=56322121504&text=" target="_blank"><img class="rrssico" src="./public/assets/img/logowhtsp.png"></a>
                 <a href="https://www.instagram.com/manosdelmargamarga/" target="_blank"><img class="rrssico" src="./public/assets/img/logoig.png"></a>
-                <a href="https://www.pinterest.cl/manosdelmargamarga/" target="_blank"><img class="rrssico" src="./public/assets/img/logopin.png"></a>
                </div>
              </div>
                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
