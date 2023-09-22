@@ -245,7 +245,7 @@ a:hover {
   .testimoniocontainer {
    display: grid;
    font-family: 'Urbanist', sans-serif; 
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
    grid-gap: 50px;
    padding: 40px;
    justify-content: space-around;
@@ -270,11 +270,13 @@ a:hover {
    transform: scale(1.03);
     }
   .testimage{
-   max-width: 100%;
+   max-width: 50%;
    max-height: auto;
    align-self: center;
+   justify-self: right;
    border-radius: 90px;
    box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
+  margin-right: 30px;
   }
   .testitext{
    font-size: 1.2vw;
@@ -282,7 +284,53 @@ a:hover {
    align-self: center;
    padding-top: 30px;
   }
-  /* Estilos Footer */
+  .contactanos{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 40px; 
+  }
+  .form-elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 0.5fr);
+    justify-items: left;
+  }
+  select{
+    width: 100%;
+  }
+  .form-elements > * {
+    grid-column: 2;
+    width: 100%;
+  }
+  .pure-group {
+    padding: 0px;
+  }
+  .honeypot-field{
+    display: none;
+  }
+  input {
+    width: 100%;
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+  }
+  #enviar{
+    background:#3697f0 ; color : white;
+    justify-self: center;
+    width: 40%;
+    border-radius: 5px;
+  }
+  .thankyou_message h2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding: 30px;
+  }
+  #botonbody {
+    width: 100%;
+  }
+
   footer {  
    font-family: Quicksand;
    background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
@@ -323,7 +371,7 @@ a:hover {
          height: auto;
          object-fit: cover;
        }
-/* Media query para dispositivos móviles, de 0 a 800px de a */
+
 @media screen and (max-width: 857px) {
   
 .cabezal {
@@ -512,7 +560,7 @@ a:hover {
        }
   .testimoniocontainer {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
    grid-template-rows: 1fr
    grid-gap: 10px;
    padding: 20px;
@@ -545,6 +593,22 @@ a:hover {
      list-style-type: none;
      justify-self: center;
      margin-right: 10px;
+    }
+    .form-elements{
+      display: grid;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      grid-template-rows: repeat(5, 0.5fr);
+      justify-items: left;
+    }
+    .textos {
+      display: grid;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+      justify-items: center;
+    }
+    .formtext2{
+      font-size: 10px;
     }
   footer {
    display: grid;

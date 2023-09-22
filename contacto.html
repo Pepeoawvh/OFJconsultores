@@ -12,12 +12,66 @@
     <link rel="stylesheet" href="styles.css"> 
   </head>
  <style>
-   .logocabezal {
-    width: 25%; 
-    height: auto;
+html{
+  width:100%;
+}
+ .contactnav {
+   display: grid;
+   background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
+   background-size: cover;
+   height: 70px;
+   grid-template-columns: 0.5fr 2fr; /*tres columnas para el navbar*/
+   grid-template-rows: 100%;
+   align-items:center; /*alinear elementos en eje vertical centro*/
+   column-gap: 10px;
+   justify-content: space-around;
+   background-color:#bae0f7
+   }
+
+   #menunav {
+    display: none;
+   }
+   .logonav {
+    height: 90%; 
     margin-left: 30px;
     align-self: center;
      }
+
+    #menuhide{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); /* Columnas que se ajustan automáticamente */
+     grid-template-rows: 100%;
+     grid-gap: 40px;
+     font-family: 'Urbanist', sans-serif;
+     font-weight: 500;
+     text-align: center;
+     font-size: 100%;
+     justify-self: right;
+     justify-items: right;
+     margin-right: 2vw;
+     }
+     .menu2 {
+      justify-self: center;
+      transition: background-color 0.7s;
+     }
+       .menu4 {
+         font-size: 100%;
+         font-family: 'Urbanist', sans-serif;
+         color: white;
+         background-color:#ff9409;
+         border-radius: 30px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-left: 20px;
+         padding-right: 20px;
+         transition: background-color 0.7s;
+        }
+      .menu4:hover {
+        background-color: #ff7207;
+      }
+      .menu4:active {
+        opacity: 0.7;
+      }
 .contactanos{
   display: grid;
   grid-template-rows: 1fr;
@@ -59,7 +113,6 @@ input {
   margin: 0; /* Elimina márgenes predeterminados */
   padding: 0; /* Elimina relleno predeterminado */
 }
-
 #enviar{
   background:#3697f0 ; color : white;
   justify-self: center;
@@ -116,31 +169,56 @@ input {
        }
 @media screen and (max-width: 857px) {
   
-  .cabezal {
-    display: grid;
-    height: 100%;
-    justify-content: space-around;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    padding: 10px;
-    justify-content: space-between; /* Alineación horizontal */
-    background-color:#f1f1f0
-  }
-  #menuOcultable {
+  .contactnav {
+  display: grid;
+  height: 100%;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr; /* Dos columnas en la primera fila */
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  justify-content: space-between; /* Alineación horizontal */
+  background-color:#f1f1f0
+}
+.logonav {
+  display: grid;
+  height: 70px;
+  left: 100%;
+  justify-self: start;
+  align-items: center; /* Centra verticalmente */
+}
+
+#menunav {
+  display:flex;
+  cursor: pointer;
+  background: none;
+  grid-row: 1; 
+  grid-column: 2; 
+  border: none;
+  font-size: 20px;
+  outline: none;
+  justify-self: end;
+}
+
+#menuhide {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-area: 2 / 1 / 2 / -1;
   align-items: center;
-  margin-right: 25px;
+  justify-content: center;
 }
-.hidden {
+.oculto {
   display:none !important
 }
-.textos > * {
-  grid-column: 2;
-}
+
+     .menu4 {
+      border-radius: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 2fr;
+      align-self: center; /* Centra verticalmente en su celda */
+    }
 .form-elements{
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
@@ -157,6 +235,50 @@ input {
 .formtext2{
   font-size: 10px;
 }
+.futer {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.7fr 0.7fr 0.7fr;
+   row-gap: 10px;
+   justify-items: center;
+   max-width: 100%;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 500;
+   }
+   .footmenu {
+     display: grid;
+     justify-content: center;
+     justify-items: center;
+     margin-right: 10px;
+    }
+   .foothelp{
+     margin-right: 20px;
+    }
+   .footcontact {
+     display: grid;
+     grid-template-rows: 1fr 0.5fr 1fr;
+     grid-gap: 10px;
+     font-size: 15px;
+     padding-top: 0px;
+     margin-left: 18px;
+     }
+     h6{
+       font-size: larger;
+      }
+     .rrss {
+       display: grid;
+       grid-template-columns: 1fr;
+       justify-content:center;
+       justify-items:center;
+       gap: 15px;
+       }
+.rrssico{
+  width: 7vw;
+background-color: #87d9fcb7;
+border-radius: 15px;
+}
+
 }
  </style>
 <body>
@@ -164,13 +286,16 @@ input {
     <button style="font-size: 20px;" id="wsp">
       <i class="fab fa-whatsapp"></i>
     </button>
-    <div class="cabezal">
-      <a href="./index.html" id="logoheadform"><img class="logocabezal" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/oftlogoheadw.png"></a> 
-      <button id="botonmenu">☰ Menú</button>
-      <div id="menuOcultable" class="hidden">
-        <span class="menutext1"><a href="./index.html">Inicio</a></span>
-        <span class="menutext2"><a href="./trayectoria.html">Trayectoria</a></span>
-        <span class="menutext3"><a href="./somos.html">¿Quiénes somos?</a></span>
+
+    <div class="contactnav">
+      <img class="logonav" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/OftLogoHead.png">
+      <button id="menunav">☰ Menú</button>
+      <div id="menuhide" class="oculto">
+        <span class="menu3"><a href="./somos.html">¿Quiénes somos?</a></span>
+        <span class="menu2"><a href="./trayectoria.html">Trayectoria Profesional</a></span>
+        <div class="botonnav">
+          <a class="menu4" href="./index.html" >Volver a Inicio</a>
+        </div>
     </div>
     </div>
   </header>
@@ -180,7 +305,7 @@ input {
   <aside class="textos">
        <p class="formtext">Estaremos encantados de ayudarte!</p>
         <p class="formtext2"> Completa el formulario y nos pondremos en contacto</p>
-       
+    
    </aside>
 
 <!-- START HERE -->
@@ -270,11 +395,11 @@ input {
                </p>
              </div>
                <div class="rrss">
-                <a href="https://www.instagram.com/manosdelmargamarga/" target="_blank"><img class="rrssico" src="./public/assets/img/logoig.png"></a>
+                <a href="https://www.instagram.com/manosdelmargamarga/" target="_blank"><img class="rrssico" src="./public/assets/img/logoigwhite.png"></a>
                </div>
              </div>
                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-                 <script src="./botonocultar.js"> </script>
+                 <script src="./botoncontacto.js"> </script>
          </footer>     
         
 </body>
