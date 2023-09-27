@@ -1,10 +1,9 @@
-
 body {
   font-family: Quicksand;
   background-color: #f8f8f8;
- }
+}
 
- #wsp {
+#wsp {
   color: white;
   position: fixed;
   bottom: 0;
@@ -12,7 +11,7 @@ body {
   width: 50px;
   height: 50px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 3px solid white;
   background-color: #25D366;
   border-radius: 30px;
@@ -21,631 +20,653 @@ body {
   box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.2);
 
 }
+
 #wsp:hover {
   transform: scale(1.15);
- }
- a {
+}
+
+a {
   color: #111111;
-  text-decoration: none; /* Para eliminar el subrayado por defecto de los enlaces */
+  text-decoration: none;
+  /* Para eliminar el subrayado por defecto de los enlaces */
 }
 
 /* Estilos para los enlaces cuando se coloca el mouse encima */
 a:hover {
   cursor: pointer;
 }
-  /* Estilos para header */
-  .cabezal {
-   display: grid;
-   background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
-   background-size: cover;
-   height: 70px;
-   grid-template-columns: 0.5fr 2fr; /*tres columnas para el navbar*/
-   grid-template-rows: 100%;
-   align-items:center; /*alinear elementos en eje vertical centro*/
-   column-gap: 10px;
-   justify-content: space-around;
-   background-color:#bae0f7
-   }
 
-   #botonmenu {
-    display: none;
-   }
-   .logocabezal {
-    height: 90%; 
-    margin-left: 30px;
-    align-self: center;
-     }
 
-    #menuOcultable {
-     display: grid;
-     grid-template-columns: repeat(4, 1fr); /* Columnas que se ajustan automáticamente */
-     grid-template-rows: 100%;
-     grid-gap: 40px;
-     font-family: 'Urbanist', sans-serif;
-     font-weight: 500;
-     text-align: center;
-     font-size: 100%;
-     justify-self: right;
-     justify-items: right;
-     margin-right: 2vw;
-     }
-     .menutext2 {
-      justify-self: center;
-      transition: background-color 0.7s;
-     }
-       .menutext4 {
-         font-size: 100%;
-         font-family: 'Urbanist', sans-serif;
-         color: white;
-         background-color:#ff9409;
-         border-radius: 30px;
-         padding-top: 10px;
-         padding-bottom: 10px;
-         padding-left: 20px;
-         padding-right: 20px;
-         transition: background-color 0.7s;
-        }
-      .menutext4:hover {
-        background-color: #ff7207;
-      }
-      .menutext4:active {
-        opacity: 0.7;
-      }
-/* Estilos contenedor Jumbo */
-  .jumbotron {
-   display: grid;
-   height: 70vh ;
-   grid-template-columns: 1fr 1fr; 
-   grid-template-rows: 1fr;
-   contain: content;
-   } 
-   .izqjumbo{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    background-image: url(./public/assets/img/businessmanReadingContract.jpg);
-    background-position: bottom;
-    background-size: cover;
-   }   
-   .derjumbo{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr; 
+.contactnav {
+  display: grid;
+  background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
+  background-size: cover;
+  height: 90px;
+  grid-template-columns: 0.5fr 2fr;
+  /*tres columnas para el navbar*/
+  grid-template-rows: 100%;
+  align-items: center;
+  /*alinear elementos en eje vertical centro*/
+  column-gap: 10px;
+  justify-content: space-around;
+  background-color: #bae0f7
+}
+
+#menunav {
+  display: none;
+}
+
+.logonav {
+  height: 90%;
+  margin-left: 30px;
+  align-self: center;
+}
+
+#menuhide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Columnas que se ajustan automáticamente */
+  grid-template-rows: 100%;
+  grid-gap: 40px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 100%;
+  justify-self: right;
+  justify-items: right;
+  margin-right: 3vw;
+  font-size: 19px;
+}
+
+.menu2 {
+  justify-self: center;
+  transition: background-color 0.7s;
+}
+
+.jumbotron {
+  display: grid;
+  height: 70vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  contain: content;
+}
+
+.izqjumbo {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-image: url(./public/assets/img/businessmanReadingContract.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.derjumbo {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+
+.titlejumbotext {
+  display: grid;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 300%;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+ 
+#botonbody {
+  width: 100%;
+  background-color: #ff9409;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  border: none;
+  height: 40%;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.7s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+#botonbody:hover {
+  background-color: #ff7207;
+}
+
+#botonbody:active {
+  opacity: 0.7;
+}
+
+#texbotonbody {
+  color: #ffffff;
+}
+
+.jumbosubtext {
+  display: grid;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 200%;
+  font-weight: 400;
+  line-height: 150%;
+  align-self: flex-start;
+}
+
+/* estilos seccion Presentacion */
+.presentacion {
+  font-family: 'Urbanist', sans-serif;
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #ecfaff;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.textopresentacion {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.5vw;
+}
+
+/* Estilos seccion Productos */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  place-items: center;    
+  }
+   .product {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-  }
-     .titlejumbotext {
-       display: grid;
-       font-family: 'Urbanist', sans-serif;
-       font-size: 300%;
-       font-weight: 500;
-       align-self: flex-start;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+    border-radius: 30px;
+    padding-bottom: 20px;
+    transition: transform 0.6s;
+    }
+    .product:hover {
+    transform: scale(1.05);
+    }
+    .productimg {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      margin-bottom: 20px;
+     }
+     .productext {
+      font-family: Quicksand;
+      max-width: 300px;
+      text-align: center;
+      margin-right: 15px;
+      margin-left: 15px;
+     }
+     .vermas {
+      display: flex;
+      justify-content: center; 
+      height: 100%;
+      margin: 50px;
       }
-      #botonbody {
-        font-family: 'Urbanist', sans-serif;
-        font-weight: 500;
-        background-color: #b6ecfd;
-        border: none;
-        height: 40%;
-        border-radius: 30px;
+      .botonvermas {
+        font-family: Quicksand;
+        font-weight: 600;
+        font-size: 1.5vw;
+        background-color: rgb(241, 238, 231);
+        color: #333;
+        height: 4vw;
+        width: 15vw;
         cursor: pointer;
-        transition: background-color 0.7s;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-        }     
-        #botonbody:hover {
-          background-color: #59d5fb;
-        }
-        #botonbody:active {
-          opacity: 0.7;
-        }
-      .jumbosubtext {
-       display: grid;
-       font-family: 'Urbanist', sans-serif;
-       font-size: 200%;
-       font-weight: 400;
-       line-height: 150%;
-       align-self: flex-start;
-     }
-    /* estilos seccion Presentacion */
-  .presentacion {
-   font-family: 'Urbanist', sans-serif;
-   display: grid;
-   grid-template-rows: 1fr;
-   background-color: #ecfaff;
-   padding: 20px;
-   text-align: center;
-   
-   }
-   h2 {
-     font-size: 30px;
-    }
-   .textopresentacion {
-     font-family: 'Urbanist', sans-serif;
-     font-size: 1.5vw;
-     
-    }
-    /* Estilos seccion Productos */
-
-    .product {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     background-color: white;
-     justify-self: right;
-     justify-items: right;
-     grid-column: 2;
-     width: 100%;
-     align-items: center;
-     text-align: center;
-    }
-     .productimg {
-       height: 100%;
-       max-width: 400px;
-       height: auto;
-       object-fit: contain;
-       object-position: center;
-      }
-      .productext {
-       font-family: 'Urbanist', sans-serif;
-       max-width: 300px;
-       text-align: left;
-       margin-right: 15px;
-       margin-left: 15px;
-       justify-self: center;
-      }
-  /* Estilos seccion Logo y quienes somos */
-  .logoContainer {
-   display: grid;
-   height: 100%;
-   width: 100%;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 15px;
-   background-color: #fff;
-   justify-items: center;
-   align-items: center;
-   background-image: url(./public/assets/img/ShellHandwritingCanvas.jpg);
-
-   }
-      .logoimgsomos {
-        width: 30%;
-        box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-        border-radius: 200px;
-      }
-      .divlistact{
-
-        width: 100%;
-        height: 100%;
-        padding: 30px;
-        margin-top: 20px;
-        align-items: center;
-      }
-      .listact {
-       list-style-type:square;
-       height: 100%;
-       width: 100%;
-       font-size: 17px;
-       color: #333;
-       text-align: left;
-       align-items: center;
-       align-self: center;
-        }
-        h5 {
-         display: grid;
-         grid-template-columns: 1fr;
-         text-align: center;
-         margin-top: 3.7vw;
-         margin-bottom: 0;
-         font-size: 2vw;
-        }
-  /* Estilos seccion Testimonios */
-  .testimoniocontainer {
-   display: grid;
-   font-family: 'Urbanist', sans-serif; 
-   grid-template-columns: 1fr;
-   grid-gap: 50px;
-   padding: 40px;
-   justify-content: space-around;
-  }
-  .testiside{
-   display: grid;
-   grid-template-rows: 1fr 1fr;
-   grid-gap: 30px;
-  }
-  .testi{
-   display: grid;
-   grid-template-columns: 3fr 1fr; 
-   height: 17vw;
-   border-radius: 25px;
-   border: 1px solid rgb(224, 224, 224);
-   box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-   padding: 20px;
-   grid-gap: 30px; 
-   transition: transform 0.7s;
-  }
-  .testi:hover{
-   transform: scale(1.03);
-    }
-  .testimage{
-   max-width: 50%;
-   max-height: auto;
-   align-self: center;
-   justify-self: right;
-   border-radius: 90px;
-   box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
-  margin-right: 30px;
-  }
-  .testitext{
-   font-size: 1.2vw;
-   text-align: left;
-   align-self: center;
-   padding-top: 30px;
-  }
-  .contactanos{
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    justify-items: center;
-    padding-top: 40px; 
-  }
-  .form-elements{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 0.5fr);
-    justify-items: left;
-  }
-  select{
-    width: 100%;
-  }
-  .form-elements > * {
-    grid-column: 2;
-    width: 100%;
-  }
-  .pure-group {
-    padding: 0px;
-  }
-  .honeypot-field{
-    display: none;
-  }
-  input {
-    width: 100%;
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina relleno predeterminado */
-  }
-  #enviar{
-    background:#3697f0 ; color : white;
-    justify-self: center;
-    width: 40%;
-    border-radius: 5px;
-  }
-  .thankyou_message h2{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    padding: 30px;
-  }
-  #botonbody {
-    width: 100%;
-  }
-
-  footer {  
-   font-family: Quicksand;
-   background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
-   background-size: cover;
-   display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   background-color: #ebfaff;
-   padding: 20px;
-   grid-gap: 40px;
-   justify-items: center;
-   }
-    ul{
-     font-family: 'Urbanist', sans-serif;
-     height: 100%;
-     width: 100%;
-     line-height: 30px;
-     }
-    h3{
-     margin: 0%;
-    }
-    .footcontact {
-     display: grid;
-     font-family: 'Urbanist', sans-serif;
-     grid-template-rows: 1fr 0.2fr 1fr;
-     grid-gap: 10px;
-     padding-top: 1px;
-     margin-left: 15px;
-     }
-     .rrss {
-       display: grid;
-       grid-template-columns: 1fr;
-       justify-items: center;
-       gap: 15px;
        }
-       .rrssico {
-         display: grid;
-         width: 4vw;
-         height: auto;
-         object-fit: cover;
-       }
-
-@media screen and (max-width: 857px) {
-  
-.cabezal {
+/* Estilos seccion Logo y quienes somos */
+.logoContainer {
   display: grid;
   height: 100%;
-  justify-content: space-around;
-  grid-template-columns: 1fr 1fr; /* Dos columnas en la primera fila */
-  grid-template-rows: 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
-  padding: 10px;
-  justify-content: space-between; /* Alineación horizontal */
-  background-color:#f1f1f0
-}
-.logocabezal {
-  display: grid;
-  height: 70px;
-  left: 100%;
-  justify-self: start;
-  align-items: center; /* Centra verticalmente */
-}
-
-#botonmenu {
-  display:flex;
-  cursor: pointer;
-  background: none;
-  grid-row: 1; 
-  grid-column: 2; 
-  border: none;
-  font-size: 20px;
-  outline: none;
-  justify-self: end;
-}
-
-#menuOcultable {
-  display: grid;
-  grid-template-columns: 0fr 1fr 1fr 1fr;
-  grid-area: 2 / 1 / 2 / -1;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  background-color: #fff;
+  justify-items: center;
   align-items: center;
-  margin-right: 25px;
-}
-.hidden {
-  display:none !important
+  background-image: url(./public/assets/img/ShellHandwritingCanvas.jpg);
 }
 
-     .menutext4 {
-      border-radius: 35px;
-      padding-left: 10px;
-      padding-right: 10px;
-      font-size: 2fr;
-      align-self: center; /* Centra verticalmente en su celda */
-    }
-     .contacto {
-      display: flex;
-      justify-content: space-around ;
-      margin: 0px;
-      color: #333;
-      background-color: #eeeeee;
-      border-radius: 20px;
-     }
+.logoimgsomos {
+  width: 30%;
+  box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+  border-radius: 200px;
+}
+
+.divlistact {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.listact {
+  list-style-type: square;
+  height: 100%;
+  width: 100%;
+  font-size: 17px;
+  color: #333;
+  text-align: left;
+  align-items: center;
+  align-self: center;
+}
+
+h5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-top: 3.7vw;
+  margin-bottom: 0;
+  font-size: 2vw;
+}
+
+/* Estilos seccion Testimonios */
+
+.contactanos {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 30px;
+}
+
+.textoformini {
+  display: grid;
+  font-size: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.textoformini>* {
+  grid-column: 2;
+}
+
+.form-elements {
+  display: grid;
+  grid-template-columns: 0.7fr 0.5fr 0.7fr;
+  grid-template-rows: repeat(5, 0.5fr);
+  justify-items: left;
+  padding-bottom: 30px;
+}
+
+select {
+  width: 100%;
+}
+
+.form-elements>* {
+  grid-column: 2;
+  width: 80%;
+  height: 50px;
+  justify-self: center;
+}
+
+.pure-group {
+  padding: 0px;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+.input {
+  justify-self: center;
+  font-size: 12px;
+  width: 100%;
+  margin: 0;
+  /* Elimina márgenes predeterminados */
+  padding: 0;
+  /* Elimina relleno predeterminado */
+}
+
+#enviar {
+  margin-top: 10px;
+  background: #3697f0;
+  font-size: 10px;
+  color: white;
+  justify-self: center;
+  width: 40%;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.thankyou_message h2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  padding: 30px;
+}
+
+.futer {
+  font-family: Quicksand;
+  background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr ;
+  background-color: #ebfaff;
+  padding: 10px;
+  grid-gap: 20px;
+  justify-items: center;
+  font-size: 18px;
+  height: auto;
+}
+.footmenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  justify-self: center;
+  text-justify: left;
+  align-items: center;
+}
+h3 {
+  margin: 0%;
+}
+
+
+.rrssico {
+  display: grid;
+  width: 4vw;
+  height: auto;
+  object-fit: cover;
+}
+/* QUERY */
+@media screen and (max-width: 857px) {
+
+  .contactnav {
+    display: grid;
+    height: 100%;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas en la primera fila */
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    /* Alineación horizontal */
+    background-color: #f1f1f0
+  }
+
+  .logonav {
+    display: grid;
+    height: 70px;
+    left: 100%;
+    justify-self: start;
+    align-items: center;
+    /* Centra verticalmente */
+  }
+
+  #menunav {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    grid-row: 1;
+    grid-column: 2;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    justify-self: end;
+  }
+
+  #menuhide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 2 / 1 / 2 / -1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .oculto {
+    display: none !important
+  }
+
+
+  .contacto {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    color: #333;
+    background-color: #eeeeee;
+    border-radius: 20px;
+  }
+
   .jumbotron {
     height: 700px;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-rows: 270px 370px;
-    grid-gap: 20px; 
+    grid-gap: 20px;
     padding: 0px;
-   }
-   .izqjumbo {
-     height: auto;
-     grid-gap: 5px; 
-     margin-top: 0px; 
-     }
-     .titlejumbotext {
-       font-size: 4vw;
-       text-align: center; 
-       letter-spacing: 2px;
-       padding-top: 0px;
-       margin-top: 0px;
-      }
-     .jumbosubtext{
-       text-align: center;
-       margin-top: 10px;
-       font-size: 3.5vw;
-       letter-spacing: 2px;
-       line-height: 5vw;
-      }
-      #botonbody {
-        display: grid;
-        align-items: center;
-        padding-bottom: 5px;
+  }
 
-      }
-   .derjumbo {
-     display: grid;
-     overflow: hidden;
-     }
-     .imgderjumbo {
-      width: 100%;
-      height: 90%;
-      object-position: top;
-      contain: content;
-      }
+  .izqjumbo {
+    height: auto;
+    grid-gap: 5px;
+    margin-top: 0px;
+  }
+
+  .titlejumbotext {
+    font-size: 4vw;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .jumbosubtext {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3.5vw;
+    letter-spacing: 2px;
+    line-height: 5vw;
+  }
+
+  #botonbody {
+    display: grid;
+    align-items: center;
+    padding-bottom: 5px;
+
+  }
+
+  .derjumbo {
+    display: grid;
+    overflow: hidden;
+  }
+
+  .imgderjumbo {
+    width: 100%;
+    height: 90%;
+    object-position: top;
+    contain: content;
+  }
+
   .presentacion {
     display: grid;
     background-color: #fff;
     padding: 20px;
     text-align: center;
     font-size: 12px;
-    }
-    h2 {
-      font-size: 4vw;
-    }
-   .textopresentacion {
-      font-size: 3vw;
-    }
-   .product {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-     border-radius: 30px;
-     padding-bottom: 20px;
-     }
-     .productimg {
-       width: 100%;
-       max-width: 500px;
-       height: auto;
-       object-fit: cover;
-       object-position: center;
-       border-top-left-radius: 30px;
-       border-top-right-radius: 30px;
-       margin-bottom: 20px;
-      }
-     .productext {
-       font-family: 'Urbanist', sans-serif;
-       max-width: 470px;
-       text-align: center;
-       margin-right: 15px;
-       margin-left: 15px;
-       font-size: 3vw;
-      }
-      .vermas {
-       display: flex;
-       justify-content: center; 
-       align-items: center;
-       height: 100%;
-       margin: 0px;
-       }
-       .botonvermas {
-         font-family: Quicksand;
-         font-size: 3vw;
-         background-color: rgb(241, 238, 231);
-         color: #333;
-         height: 7vw;
-         width: 300px;
-         cursor: pointer;
-         margin-top: 30px;
-        }
-    .logoContainer{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr;
-   grid-gap: 10px;
-   background-color: #fff;
-   margin-top: 40px;
   }
-   .logosomos {
-     display: grid;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     border-top-right-radius: 30px;
-     border-bottom-right-radius: 30px;
-     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-     object-position: center;
-     }        
-     .logoimgsomos {
-       height: 13vw;
-      }
-     .somostext {
-       font-size: 3vw;
-       color: #333;
-       text-align: center;
-       margin: 0px;
-       }
-  .testimoniocontainer {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr
-   grid-gap: 10px;
-   padding: 20px;
-   }
-   h5{
-   font-size: 5vw;
-   }
-   .testi{
-     display: grid;
-     grid-template-columns: 3fr 1fr; 
-     border-radius: 25px;
-     height: 170px;
-     border: 1px solid rgb(224, 224, 224);
-     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
-     padding: 10px;
-     grid-gap: 10px;
-    }
-   .testimage{
-     max-width: 100%;
-     max-height: 100%;
-     border-radius: 80px;
-     box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
-    }
-   .testitext{
-     text-align: right;
-     align-self: center;
-     font-size: 14px;
-    }
-   ul {
-     list-style-type: none;
-     justify-self: center;
-     margin-right: 10px;
-    }
-    .form-elements{
-      display: grid;
-      grid-template-columns: 0.1fr 1fr 0.1fr;
-      grid-template-rows: repeat(5, 0.5fr);
-      justify-items: left;
-    }
-    .textos {
-      display: grid;
-      grid-template-columns: 0.1fr 1fr 0.1fr;
-      grid-template-rows: 1fr 1fr;
-      justify-content: center;
-      justify-items: center;
-    }
-    .formtext2{
-      font-size: 10px;
-    }
-  footer {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 0.7fr 0.7fr 0.7fr;
-   row-gap: 10px;
-   justify-items: center;
-   max-width: 100%;
-   text-align: center;
-   font-size: 15px;
-   font-weight: 600;
-   }
-   .footmenu {
-     display: grid;
-     justify-content: center;
-     justify-items: center;
-     margin-right: 10px;
-    }
-   .foothelp{
-     margin-right: 20px;
-    }
-   .footcontact {
-     display: grid;
-     grid-template-rows: 1fr 0.5fr 1fr;
-     grid-gap: 10px;
-     font-size: 15px;
-     padding-top: 0px;
-     margin-left: 18px;
-     }
-     h6{
-       font-size: larger;
-      }
-     .rrss {
-       display: grid;
-       grid-template-columns: 1fr;
-       justify-content:center;
-       justify-items:center;
-       gap: 15px;
-       }
-      }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  .textopresentacion {
+    font-size: 3vw;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
+    padding-bottom: 20px;
+  }
+
+  .productimg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+
+  .productext {
+    font-family: 'Urbanist', sans-serif;
+    max-width: 470px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 3vw;
+  }
+
+  .vermas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+  }
+
+  .botonvermas {
+    font-family: Quicksand;
+    font-size: 3vw;
+    background-color: rgb(241, 238, 231);
+    color: #333;
+    height: 7vw;
+    width: 300px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .logoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    background-color: #fff;
+    padding-top: 40px;
+  }
+
+  .logosomos {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.2);
+    object-position: center;
+  }
+
+  .logoimgsomos {
+    height: 150px;
+    width: auto;
+  }
+
+  .somostext {
+    font-size: 3vw;
+    color: #333;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .divlistact {
+    padding: 0px;
+  }
+
+  .listact {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .listact,
+  li {
+    margin-top: 10px;
+  }
+
+  h5 {
+    font-size: 3vw;
+  }
+
+  ul {
+    list-style-type: none;
+    justify-self: center;
+    margin-right: 10px;
+  }
+
+  .form-elements {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: repeat(5, 0.5fr);
+    justify-items: left;
+  }
+
+  .textos {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .formtext2 {
+    font-size: 10px;
+  }
+
+  .futer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    max-width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .footmenu {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 10px;
+  }
+
+  h6 {
+    font-size: larger;
+  }
+
+  .rrss {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+  }
+}

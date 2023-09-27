@@ -1,288 +1,271 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Cinzel:wght@400;500;600;700;800;900&family=Merriweather:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Urbanist:wght@100;200;400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> 
-  </head>
-  <style>
-    html{
-  width:100%;
-}
- .contactnav {
-   display: grid;
-   background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
-   background-size: cover;
-   height: 70px;
-   grid-template-columns: 0.5fr 2fr; /*tres columnas para el navbar*/
-   grid-template-rows: 100%;
-   align-items:center; /*alinear elementos en eje vertical centro*/
-   column-gap: 10px;
-   justify-content: space-around;
-   background-color:#bae0f7
-   }
 
-   #menunav {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Borel&family=Cinzel:wght@400;500;600;700;800;900&family=Merriweather:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Urbanist:wght@100;200;400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  html {
+    width: 100%;
+  }
+
+  .contactnav {
+    display: grid;
+    background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
+    background-size: cover;
+    height: 90px;
+    grid-template-columns: 0.5fr 2fr;
+    /*tres columnas para el navbar*/
+    grid-template-rows: 100%;
+    align-items: center;
+    /*alinear elementos en eje vertical centro*/
+    column-gap: 10px;
+    justify-content: space-around;
+    background-color: #bae0f7
+  }
+
+  #menunav {
     display: none;
-   }
-   .logonav {
-    height: 90%; 
+  }
+
+  .logonav {
+    height: 90%;
     margin-left: 30px;
     align-self: center;
-     }
+  }
 
-    #menuhide{
-     display: grid;
-     grid-template-columns: repeat(3, 1fr); /* Columnas que se ajustan automáticamente */
-     grid-template-rows: 100%;
-     grid-gap: 40px;
-     font-family: 'Urbanist', sans-serif;
-     font-weight: 500;
-     text-align: center;
-     font-size: 100%;
-     justify-self: right;
-     justify-items: right;
-     margin-right: 2vw;
-     }
-     .menu2 {
+  #menuhide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Columnas que se ajustan automáticamente */
+    grid-template-rows: 100%;
+    grid-gap: 40px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 100%;
+    justify-self: right;
+    justify-items: right;
+    margin-right: 3vw;
+    font-size: 17px;
+  }
+
+  .menu2 {
+    justify-self: center;
+    transition: background-color 0.7s;
+  }
+ 
+  #botonbody {
+    width: 100%;
+    background-color: #ff9409;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    border: none;
+    height: 40%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  #botonbody:hover {
+    background-color: #ff7207;
+  }
+
+  #botonbody:active {
+    opacity: 0.7;
+  }
+
+  #texbotonbody {
+    color: #ffffff;
+  }
+
+
+  ul {
+    font-family: 'Urbanist', sans-serif;
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+  }
+
+  h3 {
+    margin: 0%;
+  }
+
+  .rrssico {
+    display: grid;
+    width: 4vw;
+    height: auto;
+    object-fit: cover;
+    justify-self: center;
+  }
+
+  @media screen and (max-width: 857px) {
+
+    .contactnav {
+      display: grid;
+      height: 100%;
+      justify-content: space-around;
+      grid-template-columns: 1fr 1fr;
+      /* Dos columnas en la primera fila */
+      grid-template-rows: 1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+      padding: 10px;
+      justify-content: space-between;
+      /* Alineación horizontal */
+      background-color: #f1f1f0
+    }
+
+    .logonav {
+      display: grid;
+      height: 60px;
+      left: 100%;
+      justify-self: start;
+      align-items: center;
+      /* Centra verticalmente */
+    }
+
+    .menu3 {
+      font-size: 15px;
+      border: solid 1.5px;
+      border-color: #ffffff;
       justify-self: center;
-      transition: background-color 0.7s;
-     }
-       .menu4 {
-         font-size: 100%;
-         font-family: 'Urbanist', sans-serif;
-         color: white;
-         background-color:#ff9409;
-         border-radius: 30px;
-         padding-top: 10px;
-         padding-bottom: 10px;
-         padding-left: 20px;
-         padding-right: 20px;
-         transition: background-color 0.7s;
-        }
-      .menu4:hover {
-        background-color: #ff7207;
-      }
-      .menu4:active {
-        opacity: 0.7;
-      }
-.contactanos{
-  display: grid;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  justify-items: center;
-  padding-top: 40px; 
-}
-.textoformini {
-  display: grid;
-  font-size: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-  margin-bottom: 30px;
-}
-.textoformini > * {
-  grid-column: 2;
-}
-.form-elements{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 0.5fr);
-  justify-items: left;
-}
-select{
-  width: 100%;
-}
-.form-elements > * {
-  grid-column: 2;
-  width: 100%;
-}
-.pure-group {
-  padding: 0px;
-}
-.honeypot-field{
-  display: none;
-}
-input {
-  width: 100%;
-  margin: 0; /* Elimina márgenes predeterminados */
-  padding: 0; /* Elimina relleno predeterminado */
-}
-#enviar{
-  background:#3697f0 ; color : white;
-  justify-self: center;
-  width: 40%;
-  border-radius: 5px;
-}
-.thankyou_message h2{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  padding: 30px;
-}
-#botonbody {
-  width: 100%;
-}
-.futer {  
-   font-family: Quicksand;
-   display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   background-color: #ebfaff;
-   padding: 20px;
-   grid-gap: 40px;
-   justify-items: center;
-   margin-top: 30px;
-   }
-    ul{
-     font-family: 'Urbanist', sans-serif;
-     height: 100%;
-     width: 100%;
-     line-height: 30px;
-     }
-    h3{
-     margin: 0%;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 15px;
     }
+
+    .menu2 {
+      font-size: 17px;
+      border: solid 1.5px;
+      border-color: #ffffff;
+      justify-self: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 15px;
+    }
+
+    #menunav {
+      display: flex;
+      cursor: pointer;
+      background: none;
+      grid-row: 1;
+      grid-column: 2;
+      border: none;
+      font-size: 20px;
+      outline: none;
+      justify-self: end;
+    }
+
+    #menuhide {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-area: 2 / 1 / 2 / -1;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10px;
+    }
+
+    .oculto {
+      display: none !important
+    }
+
+    .formulariohome {
+      background-color: #ffffff;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .form-elements {
+      display: grid;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      grid-template-rows: repeat(5, 0.2fr);
+      justify-items: left;
+    }
+
+    .textoformini {
+      display: grid;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+      justify-items: center;
+    }
+
+    .formtext2 {
+      font-size: 10px;
+    }
+
+    .futer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.7fr 0.7fr 0.7fr;
+      row-gap: 10px;
+      justify-items: center;
+      max-width: 100%;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .footmenu {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      margin-right: 10px;
+    }
+
+    .foothelp {
+      margin-right: 20px;
+    }
+
     .footcontact {
-     display: grid;
-     font-family: 'Urbanist', sans-serif;
-     grid-template-rows: 1fr 0.2fr 1fr;
-     grid-gap: 10px;
-     padding-top: 1px;
-     margin-left: 15px;
-     }
-     .rrss {
-       display: grid;
-       grid-template-columns: 1fr;
-       justify-items: center;
-       gap: 15px;
-       }
-       .rrssico {
-         display: grid;
-         width: 4vw;
-         height: auto;
-         object-fit: cover;
-       }
-@media screen and (max-width: 857px) {
-  
-  .contactnav {
-  display: grid;
-  height: 100%;
-  justify-content: space-around;
-  grid-template-columns: 1fr 1fr; /* Dos columnas en la primera fila */
-  grid-template-rows: 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
-  padding: 10px;
-  justify-content: space-between; /* Alineación horizontal */
-  background-color:#f1f1f0
-}
-.logonav {
-  display: grid;
-  height: 70px;
-  left: 100%;
-  justify-self: start;
-  align-items: center; /* Centra verticalmente */
-}
-
-#menunav {
-  display:flex;
-  cursor: pointer;
-  background: none;
-  grid-row: 1; 
-  grid-column: 2; 
-  border: none;
-  font-size: 20px;
-  outline: none;
-  justify-self: end;
-}
-
-#menuhide {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-area: 2 / 1 / 2 / -1;
-  align-items: center;
-  justify-content: center;
-}
-.oculto {
-  display:none !important
-}
-
-     .menu4 {
-      border-radius: 35px;
-      padding-left: 10px;
-      padding-right: 10px;
-      font-size: 2fr;
-      align-self: center; /* Centra verticalmente en su celda */
+      display: grid;
+      grid-template-rows: 1fr 0.5fr 1fr;
+      grid-gap: 10px;
+      font-size: 15px;
+      padding-top: 0px;
+      margin-left: 18px;
     }
-.form-elements{
-  display: grid;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-  grid-template-rows: repeat(5, 0.5fr);
-  justify-items: left;
-}
-.textoformini {
-  display: grid;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-}
-.formtext2{
-  font-size: 10px;
-}
-.futer {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 0.7fr 0.7fr 0.7fr;
-   row-gap: 10px;
-   justify-items: center;
-   max-width: 100%;
-   text-align: center;
-   font-size: 15px;
-   font-weight: 500;
-   }
-   .footmenu {
-     display: grid;
-     justify-content: center;
-     justify-items: center;
-     margin-right: 10px;
-    }
-   .foothelp{
-     margin-right: 20px;
-    }
-   .footcontact {
-     display: grid;
-     grid-template-rows: 1fr 0.5fr 1fr;
-     grid-gap: 10px;
-     font-size: 15px;
-     padding-top: 0px;
-     margin-left: 18px;
-     }
-     h6{
-       font-size: larger;
-      }
-     .rrss {
-       display: grid;
-       grid-template-columns: 1fr;
-       justify-content:center;
-       justify-items:center;
-       gap: 15px;
-       }
-.rrssico{
-  width: 7vw;
-background-color: #87d9fcb7;
-border-radius: 15px;
-}
 
-}
-  </style>
+    h6 {
+      font-size: larger;
+    }
+
+    .rrss {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      justify-items: center;
+      gap: 15px;
+    }
+
+    .rrssico {
+      width: 7vw;
+      background-color: #87d9fcb7;
+      border-radius: 15px;
+    }
+
+  }
+</style>
+
 <body>
   <header>
     <button style="font-size: 20px;" id="wsp">
@@ -294,10 +277,7 @@ border-radius: 15px;
       <div id="menuhide" class="oculto">
         <span class="menu3"><a href="./somos.html">¿Quiénes somos?</a></span>
         <span class="menu2"><a href="./trayectoria.html">Trayectoria Profesional</a></span>
-        <div class="botonnav">
-          <a class="menu4" href="./contacto.html" >Contáctanos</a>
-        </div>
-    </div>
+      </div>
     </div>
   </header>
   <div class="jumbotron">
@@ -306,136 +286,134 @@ border-radius: 15px;
       <span class="titlejumbotext"> Asesorias Tributarias</span>
       <span class="jumbosubtext">Tenerlo claro es la llave </span>
       <form>
-       <button class="boton" id="botonbody" type="submit"><a href="./contacto.html">Haz tu consulta</a></button>
-       </form>
+        <button class="boton" id="botonbody" type="submit"><a id="texbotonbody" href="#forminicio">Haz tu
+            consulta</a></button>
+      </form>
     </div>
   </div>
   <div class="presentacion">
     <h2>Expertos en Derecho Fiscal, a tu Disposición</h2>
-    <span class="textopresentacion">Nuestra amplia experiencia nos permite aportar informacion clara y soluciones eficientes a nuestros clientes</span>
+    <span class="textopresentacion">Nuestra amplia experiencia nos permite aportar informacion clara y soluciones
+      eficientes a nuestros clientes</span>
   </div>
-     <div class="product">
-      <span class="productext"> En OFJ, nuestra misión es proporcionar asesoramiento tributario excepcional y soluciones legales personalizadas que ayuden a nuestros clientes a navegar por el complejo mundo de los impuestos. Nuestro compromiso con la integridad, la ética y la excelencia nos guía en cada caso. Somos su socio confiable para resolver sus desafíos tributarios. </span>
-       <img class=productimg src="./public/assets/img/manocalc.jpg" alt="Producto 1">
-     </div>
-  <div class="logoContainer" id="quienesomos">
-  <div class="divlistact" >
-  <ul class="listact">
-      <li>Confección y presentación de declaraciones de impuestos mensuales e impuestos a la renta.</li>
-      <li>Planificación de impuestos mensuales y anuales.</li>
-      <li>Confección y presentación de declaraciones juradas anuales.</li>
-      <li>Diagnóstico de situación tributaria actual.</li>
-  </ul>
-  </div>
-     <img class=logoimgsomos  src="./public/assets/img/OftLogoHead.png  " alt="Producto 3">  
-    </div> 
-    <h5 class="testitle">
-    Preguntas Frecuentes
-    </h5> 
-    <div class="testimoniocontainer">
-      <div class="testi">   
-        <ul class="testitext">   
-          <li>Aplicación de franquicias y exenciones tributarias vigentes.</li>
-          <li>Determinación y gestión, en las diferentes solicitudes de devoluciones de impuestos.</li>
-        </ul>
-        <img class="testimage" src="./public/assets/img/formicon.png" alt="">
-      </div>
+  <div class="product-container" id="galeria">
+    <div class="product">
+       <!--Bulldog-->
+      <img class=productimg src="./public/assets/img/sii.jpg" alt="Producto 1">
+      <span class="productext"> INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII v</span>
     </div>
-    <div class="textoformini">
-      <span>Envíanos tu consulta</span>
-      <span>Te contacaremos a la brevedad</span>
-    </div>
-    <!-- START HERE -->
-   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <!-- Style The Contact Form How Ever You Prefer -->
-   <link rel="stylesheet" href="style.css">
-
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-  action=https://script.google.com/macros/s/AKfycbzQhW6b3daC1Iz6KP5sKLCRPuGZB8KQz-7Rml-tIzCD1s_zC3HaDZFI_Nf5ZrUrPkZI/exec>
-    <!-- change the form action to your script url -->
-
-    <div class="form-elements">
-      <fieldset class="pure-group">
-        <input  class="input" name="name" placeholder="Tu nombre" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <input  class="input" id="color" name="rut" placeholder="RUT" />
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <input  class="input" id="email" name="email" type="email" value=""
-        required placeholder="Correo Electronico"/>
-      </fieldset>
-
-
-      <fieldset class="pure-group">
-        <select class="input" id="message" name="mensaje">
-         <option value="consulta_general" style="color: rgb(180, 180, 180);">Motivo de consulta</option>
-         <option value="consulta_general">Consulta General</option>
-         <option value="contingencia_sii">Contingencia SII</option>
-         <option value="impuesto_herencias_donaciones">Impuesto Herencias y Donaciones</option>
-         <option value="otros">Otros</option> 
-        </select>
-      </fieldset>
-
-      <fieldset class="pure-group">
-        <select class="input" id="modalidad" name="modalidad">
-        <option value="Remoto" style="color: rgb(180, 180, 180);">Modalidad de atención</option>
-        <option value="Remoto">Remoto</option>
-        <option value="Presencial">Presencial</option>
-
-    </select>
-      </fieldset>
-
-
-      <fieldset class="pure-group honeypot-field">
-        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-        <input id="honeypot" type="text" name="honeypot" value="" />
-      </fieldset>
-
-      <button id="enviar" class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;Enviar</button>
-    </div>
-
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div class="thankyou_message" style="display:none;">
-      <h2>Gracias! Nos pondremos en contacto contigo</h2>
-    </div>
-
-  </form>
-
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="form-submission-handler.js"></script>
-<!-- END -->
-<footer class="futer">
-  <div class="footmenu">
-    <ul> <h3>Menú</h3>
-      <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">¿Quiénes somos?</a></li>
-      <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Trayectoria Profesional</a></li>
-    </ul>
-  </div>
-  <div class="foothelp">
-   <ul> <h3> Ayuda</h3>
-     <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/"> asunto comun </a></li>
-     <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">info relevante</a></li>
-     <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/"> tema a aclarar</a></li>
-     <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Blog</a></li>
-   </ul>
+    <div class="product">
+       <!--Fox Terrier-->
+      <img class=productimg  src="./public/assets/img/TGR.png" alt="Producto 2">
+      <span class="productext"> INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR </span>
    </div>
-   <div class="footcontact" id="contacto">
-     <div class="footcontactinfo"> <h3>Contacto</h3>
-       </p>
+     <div class="product">
+       <!--Rottweiler-->
+       <img class=productimg  src="./public/assets/img/mazochico.jpg" alt="Producto 3">  
+       <span class="productext"> El Rottweiler es una raza de perro grande conocida por su lealtad y resistencia física. Tienen un cuerpo musculoso, pelo corto, y son de color negro con café.
+       </span>
      </div>
-       <div class="rrss">
-        <a href="https://www.instagram.com/manosdelmargamarga/" target="_blank"><img class="rrssico" src="./public/assets/img/logoigwhite.png"></a>
-       </div>
-     </div>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-         <script src="./botoncontacto.js"> </script>
- </footer>    
-  
+ </div>
+  <div class="logoContainer" id="quienesomos">
+    <div class="divlistact">
+      <ul class="listact">
+        <li>Confección y presentación de declaraciones de impuestos mensuales e impuestos a la renta.</li>
+        <li>Planificación de impuestos mensuales y anuales.</li>
+        <li>Confección y presentación de declaraciones juradas anuales.</li>
+        <li>Diagnóstico de situación tributaria actual.</li>
+      </ul>
+    </div>
+    <img class=logoimgsomos src="./public/assets/img/OftLogoHead.png  " alt="Producto 3">
+  </div>
+  <h5 class="testitle">
+    <div class="formulariohome" id="forminicio">
+      <div class="textoformini">
+        <span class="tituloform">Envíanos tu consulta</span>
+        <span class="subtituloform">Te contacaremos a la brevedad</span>
+      </div>
+      <!-- FORMULARIO -->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <!-- Style The Contact Form How Ever You Prefer -->
+      <link rel="stylesheet" href="style.css">
 
+      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+        action=https://script.google.com/macros/s/AKfycbzQhW6b3daC1Iz6KP5sKLCRPuGZB8KQz-7Rml-tIzCD1s_zC3HaDZFI_Nf5ZrUrPkZI/exec>
+        <!-- change the form action to your script url -->
+
+        <div class="form-elements">
+          <fieldset class="pure-group">
+            <input class="input" name="name" placeholder="Nombre del Contribuyente" />
+          </fieldset>
+
+          <fieldset class="pure-group">
+            <input class="input" id="color" name="rut" placeholder="RUT del Contribuyente" />
+          </fieldset>
+
+          <fieldset class="pure-group">
+            <input class="input" id="email" name="email" type="email" value="" required
+              placeholder="Correo Electrónico" />
+          </fieldset>
+
+
+          <fieldset class="pure-group">
+            <select class="input" id="message" name="mensaje">
+              <option value="consulta_general" style="color: rgb(180, 180, 180);">Motivo de consulta</option>
+              <option value="consulta_general">Consulta General</option>
+              <option value="contingencia_sii">Contingencia SII</option>
+              <option value="contingencia_sii">Contingencia TGR</option>
+              <option value="impuesto_herencias_donaciones">Impuesto Herencias y Donaciones</option>
+              <option value="otros">Otros</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="pure-group">
+            <select class="input" id="modalidad" name="modalidad">
+              <option value="Remoto" style="color: rgb(180, 180, 180);">Modalidad de atención</option>
+              <option value="Remoto">Remoto</option>
+              <option value="Presencial">Presencial</option>
+
+            </select>
+          </fieldset>
+
+
+          <fieldset class="pure-group honeypot-field">
+            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
+              empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+            <input id="honeypot" type="text" name="honeypot" value="" />
+          </fieldset>
+
+          <button id="enviar" class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;Enviar</button>
+        </div>
+
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div class="thankyou_message" style="display:none;">
+          <h2>Gracias! Nos pondremos en contacto contigo</h2>
+        </div>
+
+      </form>
+
+      <!-- Submit the Form to Google Using "AJAX" -->
+      <script data-cfasync="false" src="form-submission-handler.js"></script>
+      <!-- FIN FORMULARIO -->
+    </div>
+    <footer class="futer">
+      <div class="footmenu">
+          <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">¿Quiénes somos?</a></span>
+          <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Trayectoria Profesional</a></span>
+      </div>
+      <div class="footcontact" id="contacto">
+        <div class="rrss">
+          <a href="https://www.instagram.com/manosdelmargamarga/" target="_blank"><img class="rrssico"
+              src="./public/assets/img/logoigwhite.png"></a>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+      <script src="./botoncontacto.js"> </script>
+    </footer>
 </body>
+
 </html>

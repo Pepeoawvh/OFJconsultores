@@ -1,217 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Cinzel:wght@400;500;600;700;800;900&family=Merriweather:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">    
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Urbanist:wght@100;200;400;600&display=swap" rel="stylesheet">        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="styles.css"> 
-      </head>
-<style> 
-    .cabezal {
-   display: grid;
-   background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
-   background-size: cover;
-   height: 70px;
-   grid-template-columns: 0.5fr 2fr; /*tres columnas para el navbar*/
-   grid-template-rows: 100%;
-   align-items:center; /*alinear elementos en eje vertical centro*/
-   column-gap: 10px;
-   justify-content: space-around;
-   background-color:#bae0f7
-   }
-   .logocabezal {
-    width: 25%; 
-     height: auto;
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Borel&family=Cinzel:wght@400;500;600;700;800;900&family=Merriweather:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Urbanist:wght@100;200;400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  html {
+    width: 100%;
+  }
+
+  .contactnav {
+    display: grid;
+    background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
+    background-size: cover;
+    height: 90px;
+    grid-template-columns: 0.5fr 2fr;
+    /*tres columnas para el navbar*/
+    grid-template-rows: 100%;
+    align-items: center;
+    /*alinear elementos en eje vertical centro*/
+    column-gap: 10px;
+    justify-content: space-around;
+    background-color: #bae0f7
+  }
+
+  #menunav {
+    display: none;
+  }
+
+  .logonav {
+    height: 90%;
     margin-left: 30px;
     align-self: center;
-     }
-
-    #menuOcultable {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr); /* Columnas que se ajustan automáticamente */
-     grid-template-rows: 100%;
-     grid-gap: 40px;
-     font-family: 'Urbanist', sans-serif;
-     font-weight: 500;
-     text-align: center;
-     font-size: 100%;
-     justify-self: right;
-     justify-items: right;
-     margin-right: 2vw;
-     }
-         .menutext3 {
-            justify-self: left;   
-         }
-         .menutext2{
-            font-weight: 500;
-         }
-         #menuOcultable{
-            justify-items: left;
-         }
-
-         .bodytrayect{
-          margin-bottom: 30px;
-          margin-top: 30px;
-         }
-         .headtrayect{
-         text-align: center;
-         font-size: 20px;
-         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-         .tarjetabogado{
-          margin-top: 30px;
-          padding-left: 40px;
-          display: grid;
-          grid-template-columns: 100px 100px 100px 100px 100px 100px ;
-          grid-template-rows: 50px 50px 100px 100px 100px;
-         }
-         .titletrayect{
-          align-self: ;
-          grid-row: 1 / 2;
-          grid-column: 1/ 4;
-        
-         }
-         .imgtrayect{
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          grid-area: 3 / 1 / 6 / 4;
-
-         }
-         .subtitle{
-          align-self: self-start;
-          grid-area: 2 / 1 / 3 / 5;
-         }
-         .textrayect{
-          padding-left: 30px ;
-          text-align: justify;
-          grid-area: 3 / 4 / 6 / 7;
-         }
-         .hrcolor{
-          grid-area: 2 / 1 / 3 / 4;
-         }
-
-@media screen and (max-width: 857px) {
-  
-  .cabezal {
-    display: grid;
-    height: 100%;
-    width: auto;
-    justify-content: space-around;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    padding: 10px;
-    justify-content: space-between; /* Alineación horizontal */
-    background-color:#f1f1f0
   }
-  #menuOcultable {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-area: 2 / 1 / 2 / -1;
-  align-items: center;
-  margin-right: 25px;
-}
-.hidden {
-  display:none !important
-}
-.headtrayect{
-  text-align: center;
-}
-         .tarjetabogado{
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
 
-         }
-         .titletrayect{
-        
-         }
-         .imgtrayect{
-          display: flex;
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-         }
-         .subtitle{
-          display: flex;
-          text-align: left;
-          margin-top: ;
-          margin-bottom: 15px;
-         }
-         .textrayect{
-          display: flex;
-          padding-left:   0px ;
-          text-align: justify;
-         }
-         .hrcolor{
-         }
-}
+  #menuhide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Columnas que se ajustan automáticamente */
+    grid-template-rows: 100%;
+    grid-gap: 40px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 100%;
+    justify-self: right;
+    justify-items: right;
+    margin-right: 3vw;
+    font-size: 17px;
+  }
+
+  .menu2 {
+    justify-self: center;
+    transition: background-color 0.7s;
+  }
+
+  .bodytrayect {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .headtrayect {
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .tarjetabogado {
+    margin-top: 30px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px 100px 100px 100px;
+  }
+
+  .titletrayect {
+    align-self: center;
+    grid-row: 1 / 2;
+    grid-column: 1/ 4;
+  }
+
+  .imgtrayect {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-area: 3 / 1 / 6 / 4;
+
+  }
+
+  .subtitle {
+    align-self: self-start;
+    grid-area: 2 / 1 / 3 / 5;
+  }
+
+  .textrayect {
+    padding-left: 30px;
+    text-align: justify;
+    grid-area: 3 / 4 / 6 / 7;
+  }
+
+  .hrcolor {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+
+  @media screen and (max-width: 857px) {
+
+    .contactnav {
+      display: grid;
+      height: 100%;
+      justify-content: space-around;
+      grid-template-columns: 1fr 1fr;
+      /* Dos columnas en la primera fila */
+      grid-template-rows: 1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+      padding: 10px;
+      justify-content: space-between;
+      /* Alineación horizontal */
+      background-color: #f1f1f0
+    }
+
+    .logonav {
+      display: grid;
+      height: 70px;
+      left: 100%;
+      justify-self: start;
+      align-items: center;
+      /* Centra verticalmente */
+    }
+
+    #menunav {
+      display: flex;
+      cursor: pointer;
+      background: none;
+      grid-row: 1;
+      grid-column: 2;
+      border: none;
+      font-size: 20px;
+      outline: none;
+      justify-self: end;
+    }
+
+    #menuhide {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-area: 2 / 1 / 2 / -1;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .oculto {
+      display: none !important
+    }
+
+    .menu3 {
+      font-size: 15px;
+      border: solid 1.5px;
+      border-color: #ffffff;
+      justify-self: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 15px;
+    }
+
+    .menu2 {
+      font-size: 17px;
+      border: solid 1.5px;
+      border-color: #ffffff;
+      justify-self: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 15px;
+    }
+
+    .headtrayect {
+      text-align: center;
+    }
+
+    .tarjetabogado {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .titletrayect {
+      align-items: center;
+    }
+
+    .imgtrayect {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .subtitle {
+      display: flex;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .textrayect {
+      display: flex;
+      padding-left: 0px;
+      text-align: justify;
+    }
+  }
 </style>
-    
+
 <body>
-    <header>
-        <button style="font-size: 20px;" id="wsp">
-          <i class="fab fa-whatsapp"></i>
-        </button>
-        <div class="cabezal">
-          <a href="./index.html" id="logoheadform"><img class="logocabezal" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/OftLogoHead.png"></a> 
-          <button id="botonmenu">☰ Menú</button>
-          <div id="menuOcultable" class="hidden">
-            <span class="menutext2"><a href="./index.html">Inicio</a></span>
-            <span class="menutext3"><a href="./trayectoria.html">Trayectoria</a></span>
-            <div class="iniciarsesion">
-              <a class="menutext4" href="./contacto.html" >Contáctanos</a>
-            </div>
-        </div>
-        </div>
-      </header>
+  <header>
+    <button style="font-size: 20px;" id="wsp">
+      <i class="fab fa-whatsapp"></i>
+    </button>
+    <div class="contactnav">
+      <img class="logonav" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/OftLogoHead.png">
+      <button id="menunav">☰ Menú</button>
+      <div id="menuhide" class="oculto">
+        <span class="menu3"><a href="./index.html">Inicio</a></span>
+        <span class="menu2"><a href="./trayectoria.html">Trayectoria Profesional</a></span>
+      </div>
+    </div>
+  </header>
 
-      <div class="bodytrayect">
-        <h1 class="headtrayect">¿Quiénes somos?</h1>
-        <hr class="hr_color">
-      <div class="tarjetabogado">
-          <h4 class="titletrayect" style="font-family: 'Montserrat', sans-serif; font-weight:500;">Oscar Fuentes</h4>
-          <img class="imgtrayect" src="./public/assets/img/firmadigital.png">
-          <span class="subtitle" style="font-family: 'Montserrat', sans-serif; font-weight:300;">SOCIO PRINCIPAL Y GERENTE GENERAL</span>
-          <div class="textrayect" style="font-family: 'Montserrat', sans-serif; font-weight:400;">Ingeniero Civil Industrial de la Universidad de Chile, MBA de La Universidad Católica de Chile, Contador Auditor de la Universidad Gabriela Mistral y Magíster en Dirección Tributaria de la Universidad Adolfo Ibáñez, con más de 15 años de experiencia en evaluación de proyectos, análisis financiero de empresas, planificación estratégica, administración gerencial y modelamiento de negocios.
-         </div>
-        </div>
-    </div>  
+  <div class="bodytrayect">
+    <h1 class="headtrayect">¿Quiénes somos?</h1>
+    <hr class="hr_color">
+    <div class="tarjetabogado">
+      <h4 class="titletrayect" style="font-family: 'Montserrat', sans-serif; font-weight:500;">Oscar Fuentes</h4>
+      <img class="imgtrayect" src="./public/assets/img/firmadigital.png">
+      <span class="subtitle" style="font-family: 'Montserrat', sans-serif; font-weight:300;">SOCIO PRINCIPAL Y GERENTE
+        GENERAL</span>
+      <div class="textrayect" style="font-family: 'Montserrat', sans-serif; font-weight:400;">Ingeniero Civil Industrial
+        de la Universidad de Chile, MBA de La Universidad Católica de Chile, Contador Auditor de la Universidad Gabriela
+        Mistral y Magíster en Dirección Tributaria de la Universidad Adolfo Ibáñez, con más de 15 años de experiencia en
+        evaluación de proyectos, análisis financiero de empresas, planificación estratégica, administración gerencial y
+        modelamiento de negocios.
+      </div>
+    </div>
+  </div>
 
 
-  <footer>
-   <div class="footmenu">
-     <ul> <h3>Menú</h3>
-       <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">¿Quiénes somos?</a></li>
-       <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Trayectoria Profesional</a></li>
-      </ul>
-   </div>
-   <div class="foothelp">
-    <ul> <h3> Ayuda</h3>
-      <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/"> Asunto comun </a></li>
-      <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">info relevante</a></li>
-      <li><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Blog</a></li>
-    </ul>
+  <footer class="futer">
+    <div class="footmenu">
+        <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">¿Quiénes somos?</a></span>
+        <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Trayectoria Profesional</a></span>
     </div>
     <div class="footcontact" id="contacto">
-      <div class="footcontactinfo"> <h3>Redes</h3>
-        </p>     
+      <div class="rrss">
+        <a href="https://www.instagram.com/manosdelmargamarga/" target="_blank"><img class="rrssico"
+            src="./public/assets/img/logoigwhite.png"></a>
       </div>
-        <div class="rrss">
-         <a href="https://www.instagram.com/manosdelmargamarga/" target="_blank"><img class="rrssico" src="./public/assets/img/logoigwhite.png"></a>
-
-        </div>
-      </div>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-          <script src="./app.js"> </script>
-          <script src="./botonocultar.js"> </script>
-          <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
-  </footer>     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <script src="./botoncontacto.js"> </script>
+  </footer>
 </body>
+
 </html>
