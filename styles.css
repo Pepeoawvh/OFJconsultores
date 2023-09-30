@@ -56,7 +56,7 @@ a:hover {
   display: none;
 }
 
-#logonavbar {
+.logonav{
   background-image: url(public/assets/img/OftLogoHead.png);
   background-size: contain;
   background-repeat: no-repeat;
