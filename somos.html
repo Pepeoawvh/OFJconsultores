@@ -26,6 +26,7 @@
     display: grid;
     background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 90px;
     grid-template-columns: 0.5fr 2fr;
     /*tres columnas para el navbar*/
@@ -39,12 +40,6 @@
 
   #menunav {
     display: none;
-  }
-
-  .logonav {
-    height: 90%;
-    margin-left: 30px;
-    align-self: center;
   }
 
   #menuhide {
@@ -227,7 +222,7 @@
       <i class="fab fa-whatsapp"></i>
     </button>
     <div class="contactnav">
-      <img class="logonav" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/OftLogoHead.png">
+      <div class="logonav" id="logonavbar"></div>
       <button id="menunav">☰ Menú</button>
       <div id="menuhide" class="oculto">
         <span class="menu3"><a href="./index.html">Inicio</a></span>
