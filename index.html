@@ -17,262 +17,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-  html {
-    width: 100%;
-  }
-
-  .contactnav {
-    display: grid;
-    background-image: url(./public/assets/img/BlueTrianglePattern.jpg);
-    background-size: cover;
-    height: 90px;
-    grid-template-columns: 0.5fr 2fr;
-    /*tres columnas para el navbar*/
-    grid-template-rows: 100%;
-    align-items: center;
-    /*alinear elementos en eje vertical centro*/
-    column-gap: 10px;
-    justify-content: space-around;
-    background-color: #bae0f7
-  }
-
-  #menunav {
-    display: none;
-  }
-
-  .logonav {
-    height: 90%;
-    margin-left: 30px;
-    align-self: center;
-  }
-
-  #menuhide {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Columnas que se ajustan automáticamente */
-    grid-template-rows: 100%;
-    grid-gap: 40px;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 100%;
-    justify-self: right;
-    justify-items: right;
-    margin-right: 3vw;
-    font-size: 17px;
-  }
-
-  .menu2 {
-    justify-self: center;
-    transition: background-color 0.7s;
-  }
- 
-  #botonbody {
-    width: 100%;
-    background-color: #ff9409;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 500;
-    border: none;
-    height: 40%;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.7s;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-  }
-
-  #botonbody:hover {
-    background-color: #ff7207;
-  }
-
-  #botonbody:active {
-    opacity: 0.7;
-  }
-
-  #texbotonbody {
-    color: #ffffff;
-  }
-
-
-  ul {
-    font-family: 'Urbanist', sans-serif;
-    height: 100%;
-    width: 100%;
-    line-height: 30px;
-  }
-
-  h3 {
-    margin: 0%;
-  }
-
-  .rrssico {
-    display: grid;
-    width: 4vw;
-    height: auto;
-    object-fit: cover;
-    justify-self: center;
-  }
-
-  @media screen and (max-width: 857px) {
-
-    .contactnav {
-      display: grid;
-      height: 100%;
-      justify-content: space-around;
-      grid-template-columns: 1fr 1fr;
-      /* Dos columnas en la primera fila */
-      grid-template-rows: 1fr;
-      column-gap: 10px;
-      row-gap: 10px;
-      padding: 10px;
-      justify-content: space-between;
-      /* Alineación horizontal */
-      background-color: #f1f1f0
-    }
-
-    .logonav {
-      display: grid;
-      height: 60px;
-      left: 100%;
-      justify-self: start;
-      align-items: center;
-      /* Centra verticalmente */
-    }
-
-    .menu3 {
-      font-size: 15px;
-      border: solid 1.5px;
-      border-color: #ffffff;
-      justify-self: center;
-      padding-left: 15px;
-      padding-right: 15px;
-      border-radius: 15px;
-    }
-
-    .menu2 {
-      font-size: 17px;
-      border: solid 1.5px;
-      border-color: #ffffff;
-      justify-self: center;
-      padding-left: 15px;
-      padding-right: 15px;
-      border-radius: 15px;
-    }
-
-    #menunav {
-      display: flex;
-      cursor: pointer;
-      background: none;
-      grid-row: 1;
-      grid-column: 2;
-      border: none;
-      font-size: 20px;
-      outline: none;
-      justify-self: end;
-    }
-
-    #menuhide {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-area: 2 / 1 / 2 / -1;
-      align-items: center;
-      justify-content: center;
-      padding-top: 10px;
-    }
-
-    .oculto {
-      display: none !important
-    }
-
-    .formulariohome {
-      background-color: #ffffff;
-      padding-bottom: 20px;
-      padding-top: 20px;
-    }
-
-    .form-elements {
-      display: grid;
-      grid-template-columns: 0.1fr 1fr 0.1fr;
-      grid-template-rows: repeat(5, 0.2fr);
-      justify-items: left;
-    }
-
-    .textoformini {
-      display: grid;
-      grid-template-columns: 0.1fr 1fr 0.1fr;
-      grid-template-rows: 1fr 1fr;
-      justify-content: center;
-      justify-items: center;
-    }
-
-    .formtext2 {
-      font-size: 10px;
-    }
-
-    .futer {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.7fr 0.7fr 0.7fr;
-      row-gap: 10px;
-      justify-items: center;
-      max-width: 100%;
-      text-align: center;
-      font-size: 15px;
-      font-weight: 500;
-    }
-
-    .footmenu {
-      display: grid;
-      justify-content: center;
-      justify-items: center;
-      margin-right: 10px;
-    }
-
-    .foothelp {
-      margin-right: 20px;
-    }
-
-    .footcontact {
-      display: grid;
-      grid-template-rows: 1fr 0.5fr 1fr;
-      grid-gap: 10px;
-      font-size: 15px;
-      padding-top: 0px;
-      margin-left: 18px;
-    }
-
-    h6 {
-      font-size: larger;
-    }
-
-    .rrss {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      justify-items: center;
-      gap: 15px;
-    }
-
-    .rrssico {
-      width: 7vw;
-      background-color: #87d9fcb7;
-      border-radius: 15px;
-    }
-
-  }
-</style>
-
 <body>
   <header>
     <button style="font-size: 20px;" id="wsp">
       <i class="fab fa-whatsapp"></i>
     </button>
     <div class="contactnav">
-      <img class="logonav" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/OftLogoHead.png">
+      <img class="logonav" id="logonavbar" src="/PAGINA OSCAR/CUSTOMWEB/public/assets/img/OftLogoHead.png">
       <button id="menunav">☰ Menú</button>
       <div id="menuhide" class="oculto">
         <span class="menu3"><a href="./somos.html">¿Quiénes somos?</a></span>
@@ -281,7 +32,6 @@
     </div>
   </header>
   <div class="jumbotron">
-    <div class="izqjumbo"></div>
     <div class="derjumbo">
       <span class="titlejumbotext"> Asesorias Tributarias</span>
       <span class="jumbosubtext">Tenerlo claro es la llave </span>
@@ -290,9 +40,10 @@
             consulta</a></button>
       </form>
     </div>
+    <div class="izqjumbo"></div>
   </div>
   <div class="presentacion">
-    <h2>Expertos en Derecho Fiscal a tu disposición</h2>
+    <h2 class="titulopresentacion">Expertos en Derecho Fiscal a tu disposición</h2>
     <span class="textopresentacion">Nuestra amplia experiencia nos permite aportar informacion clara y soluciones
       eficientes a nuestros clientes</span>
   </div>
@@ -325,7 +76,6 @@
     </div>
     <img class=logoimgsomos src="./public/assets/img/OftLogoHead.png  " alt="Producto 3">
   </div>
-  <h5 class="testitle">
     <div class="formulariohome" id="forminicio">
       <div class="textoformini">
         <span class="tituloform">Envíanos tu consulta</span>

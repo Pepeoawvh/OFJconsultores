@@ -162,9 +162,10 @@ a:hover {
   font-family: 'Urbanist', sans-serif;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: #ecfaff;
+  background-color: #dff6fe;
   padding: 20px;
   text-align: center;
+  align-items: center;
   height: 150px;
 }
 
@@ -308,7 +309,7 @@ h5 {
   justify-content: center;
   justify-items: center;
   margin-bottom: 20px;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 .textoformini>* {
@@ -355,7 +356,7 @@ select {
 #enviar {
   margin-top: 10px;
   background: #3697f0;
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   justify-self: center;
   width: 40%;
@@ -422,10 +423,9 @@ h3 {
     background-color: #f1f1f0
   }
 
-  .logonav {
+  #logonavbar {
     display: grid;
-    height: 70px;
-    left: 100%;
+    height: 75px;
     justify-self: start;
     align-items: center;
     /* Centra verticalmente */
@@ -433,13 +433,15 @@ h3 {
 
   #menunav {
     display: flex;
+    color: #323232;
     cursor: pointer;
     background: none;
     grid-row: 1;
     grid-column: 2;
     border: none;
-    font-size: 20px;
+    font-size: 25px;
     outline: none;
+    font-weight: 500;
     justify-self: end;
   }
 
@@ -449,13 +451,15 @@ h3 {
     grid-area: 2 / 1 / 2 / -1;
     align-items: center;
     justify-content: center;
+    justify-items: center;
   }
 
   .oculto {
     display: none !important
   }
-
-
+.menu3{
+  justify-self: center;
+}
   .contacto {
     display: flex;
     justify-content: space-around;
@@ -466,7 +470,7 @@ h3 {
   }
 
   .jumbotron {
-    height: 700px;
+    height: 650px;
     grid-template-columns: 1fr;
     grid-template-rows: 270px 370px;
     grid-gap: 20px;
@@ -504,6 +508,8 @@ h3 {
 
   .derjumbo {
     display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    justify-content: center;
     overflow: hidden;
   }
 
@@ -529,26 +535,45 @@ h3 {
   .textopresentacion {
     font-size: 3vw;
   }
-
-  .product {
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    place-items: center;
+    }
+  .product   {
     display: flex;
-    width: 300px;
+    width: 400px;
     height: 300px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
     padding-bottom: 20px;
   }
 
+#logosii{
+  width: 100%;
+  height: 90%;
+}
   .productimg {
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
+    width: 70%;
+    max-width: 400px;
+    height: 70%;
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
     margin-bottom: 20px;
     margin-top: 25px;
+  }
+  #defensaimg{
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 
   .productext {
@@ -558,25 +583,6 @@ h3 {
     margin-right: 15px;
     margin-left: 15px;
     font-size: 3vw;
-  }
-
-  .vermas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0px;
-  }
-
-  .botonvermas {
-    font-family: Quicksand;
-    font-size: 3vw;
-    background-color: rgb(241, 238, 231);
-    color: #333;
-    height: 7vw;
-    width: 300px;
-    cursor: pointer;
-    margin-top: 30px;
   }
 
   .logoContainer {
@@ -634,7 +640,11 @@ h3 {
     justify-self: center;
     margin-right: 10px;
   }
-
+.textoformini{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 
+}
   .form-elements {
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
