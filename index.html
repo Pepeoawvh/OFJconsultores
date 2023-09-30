@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -16,7 +16,10 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
+
 <body>
   <header>
     <button style="font-size: 20px;" id="wsp">
@@ -49,22 +52,22 @@
   </div>
   <div class="product-container" id="galeria">
     <div class="product">
-       <!--Bulldog-->
+      <!--Bulldog-->
       <img class=productimg id="logosii" src="./public/assets/img/sii.jpg" alt="Producto 1">
       <span class="productext">SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII INFO SII v</span>
     </div>
     <div class="product">
-       <!--Fox Terrier-->
+      <!--Fox Terrier-->
       <img class=productimg id="logotgr" src="./public/assets/img/TGR.png" alt="Producto 2">
       <span class="productext"> INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR INFO TGR </span>
-   </div>
-     <div class="product">
-       <!--Rottweiler-->
-       <img class=productimg id="defensaimg" src="./public/assets/img/mazochico.jpg" alt="Producto 3">  
-       <span class="productext"> DEFENSA LEGAL
-       </span>
-     </div>
- </div>
+    </div>
+    <div class="product">
+      <!--Rottweiler-->
+      <img class=productimg id="defensaimg" src="./public/assets/img/mazochico.jpg" alt="Producto 3">
+      <span class="productext"> DEFENSA LEGAL
+      </span>
+    </div>
+  </div>
   <div class="logoContainer" id="quienesomos">
     <div class="divlistact">
       <ul class="listact">
@@ -76,94 +79,91 @@
     </div>
     <img class=logoimgsomos src="./public/assets/img/OftLogoHead.png  " alt="Producto 3">
   </div>
-    <div class="formulariohome" id="forminicio">
+  <div class="formulariohome" id="forminicio">
+
+    <!-- FORMULARIO -->
+
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+      action=https://script.google.com/macros/s/AKfycbz3fbfzh4PKG959yZei7r7nmzyjLpjfaip-F0t30hFWQf4LfPgs9sgJdrxMHb2GlmcstA/exec>
+
       <div class="textoformini">
-        <span class="tituloform">Envíanos tu consulta</span>
-        <span class="subtituloform">Te contacaremos a la brevedad</span>
+        <span class="tituloform" class="pure-group">Envíanos tu consulta</span>
+        <span class="subtituloform" class="pure-group">Te contacaremos a la brevedad</span>
       </div>
-      <!-- FORMULARIO -->
-      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <!-- Style The Contact Form How Ever You Prefer -->
-      <link rel="stylesheet" href="style.css">
+      
+      <div class="form-elements">
+        <fieldset class="pure-group">
+          <input class="input" name="name" placeholder="Nombre del Contribuyente" />
+        </fieldset>
 
-      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-        action=https://script.google.com/macros/s/AKfycbzQhW6b3daC1Iz6KP5sKLCRPuGZB8KQz-7Rml-tIzCD1s_zC3HaDZFI_Nf5ZrUrPkZI/exec>
-        <!-- change the form action to your script url -->
+        <fieldset class="pure-group">
+          <input class="input" id="color" name="rut" placeholder="RUT del Contribuyente" />
+        </fieldset>
 
-        <div class="form-elements">
-          <fieldset class="pure-group">
-            <input class="input" name="name" placeholder="Nombre del Contribuyente" />
-          </fieldset>
-
-          <fieldset class="pure-group">
-            <input class="input" id="color" name="rut" placeholder="RUT del Contribuyente" />
-          </fieldset>
-
-          <fieldset class="pure-group">
-            <input class="input" id="email" name="email" type="email" value="" required
-              placeholder="Correo Electrónico" />
-          </fieldset>
+        <fieldset class="pure-group">
+          <input class="input" id="email" name="email" type="email" value="" required
+            placeholder="Correo Electrónico" />
+        </fieldset>
 
 
-          <fieldset class="pure-group">
-            <select class="input" id="message" name="mensaje">
-              <option value="consulta_general" style="color: rgb(180, 180, 180);">Motivo de consulta</option>
-              <option value="consulta_general">Consulta General</option>
-              <option value="contingencia_sii">Contingencia SII</option>
-              <option value="contingencia_sii">Contingencia TGR</option>
-              <option value="impuesto_herencias_donaciones">Impuesto Herencias y Donaciones</option>
-              <option value="otros">Otros</option>
-            </select>
-          </fieldset>
+        <fieldset class="pure-group">
+          <select class="input" id="message" name="mensaje">
+            <option value="consulta_general" style="color: rgb(180, 180, 180);">Motivo de consulta</option>
+            <option value="consulta_general">Consulta General</option>
+            <option value="contingencia_sii">Contingencia SII</option>
+            <option value="contingencia_sii">Contingencia TGR</option>
+            <option value="impuesto_herencias_donaciones">Impuesto Herencias y Donaciones</option>
+            <option value="otros">Otros</option>
+          </select>
+        </fieldset>
 
-          <fieldset class="pure-group">
-            <select class="input" id="modalidad" name="modalidad">
-              <option value="Remoto" style="color: rgb(180, 180, 180);">Modalidad de atención</option>
-              <option value="Remoto">Remoto</option>
-              <option value="Presencial">Presencial</option>
+        <fieldset class="pure-group">
+          <select class="input" id="modalidad" name="modalidad">
+            <option value="Remoto" style="color: rgb(180, 180, 180);">Modalidad de atención</option>
+            <option value="Remoto">Remoto</option>
+            <option value="Presencial">Presencial</option>
 
-            </select>
-          </fieldset>
+          </select>
+        </fieldset>
 
 
-          <fieldset class="pure-group honeypot-field">
-            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
-              empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-            <input id="honeypot" type="text" name="honeypot" value="" />
-          </fieldset>
+        <fieldset class="pure-group honeypot-field">
+          <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
+            empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+          <input id="honeypot" type="text" name="honeypot" value="" />
+        </fieldset>
 
-          <button id="enviar" class="button-success pure-button button-xlarge">
-            <i class="fa fa-paper-plane"></i>&nbsp;Enviar</button>
-        </div>
+        <button id="enviar" class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Enviar</button>
+      </div>
 
-        <!-- Customise the Thankyou Message People See when they submit the form: -->
-        <div class="thankyou_message" style="display:none;">
-          <h2>Gracias! Nos pondremos en contacto contigo</h2>
-        </div>
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div class="thankyou_message" style="display:none;">
+        <h2>Gracias! Nos pondremos en contacto contigo</h2>
+      </div>
 
-      </form>
+    </form>
 
-      <!-- Submit the Form to Google Using "AJAX" -->
-      <script data-cfasync="false" src="form-submission-handler.js"></script>
-      <!-- FIN FORMULARIO -->
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- FIN FORMULARIO -->
+  </div>
+  <footer class="futer">
+    <div class="footmenu">
+      <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">¿Quiénes somos?</a></span>
+      <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Trayectoria Profesional</a></span>
     </div>
-    <footer class="futer">
-      <div class="footmenu">
-          <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">¿Quiénes somos?</a></span>
-          <span><a href="https://pepeoawvh.github.io/Proyecto1MMM/">Trayectoria Profesional</a></span>
+    <div class="footcontact" id="contacto">
+      <div class="rrss">
+        <a href="https://www.instagram.com/pepeoaw/" target="_blank"><img class="rrssico"
+            src="./public/assets/img/logoigwhite.png"></a>
       </div>
-      <div class="footcontact" id="contacto">
-        <div class="rrss">
-          <a href="https://www.instagram.com/pepeoaw/" target="_blank"><img class="rrssico"
-              src="./public/assets/img/logoigwhite.png"></a>
-        </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-      <script src="./botoncontacto.js"> </script>
-    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <script src="./botoncontacto.js"> </script>
+  </footer>
 </body>
 
 </html>

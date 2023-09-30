@@ -57,9 +57,11 @@ a:hover {
 }
 
 #logonavbar {
+  background-image: url(public/assets/img/OftLogoHead.png);
   height: 90%;
   margin-left: 30px;
   align-self: center;
+  border-radius: 50px;
 }
 
 #menuhide {
