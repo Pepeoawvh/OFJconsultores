@@ -57,7 +57,7 @@ a:hover {
 }
 
 #logonavbar {
-  /* background-image: url(public/assets/img/OftLogoHead.png); */
+  background-image: url(public/assets/img/OftLogoHead.png);
   background-size: contain;
   height: 90%;
   margin-left: 30px;
