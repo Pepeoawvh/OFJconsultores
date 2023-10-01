@@ -129,6 +129,7 @@ a:hover {
   align-self: flex-end;
   justify-self: right;
   padding-right: 90px;
+  margin-left: 75px;
 }
 
 #botonbody {
@@ -525,7 +526,7 @@ h3 {
     display: grid;
     height: 650px;
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 300px 300px;
+    /* grid-template-rows: 300px 300px; */
     grid-gap: 20px;
     padding: 0px;
   }
@@ -650,8 +651,8 @@ h3 {
 
   .logoContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  ;
     grid-gap: 10px;
     background-color: #fff;
     padding-top: 40px;
@@ -671,6 +672,7 @@ h3 {
   .logoimgsomos {
     height: 150px;
     width: auto;
+    margin-bottom: 40px;
   }
 
   .somostext {
@@ -737,7 +739,7 @@ h3 {
     display: grid;
     justify-content: center;
     justify-items: center;
-    margin-right: 10px;
+    padding-left: 30px;
   }
 
   h6 {
