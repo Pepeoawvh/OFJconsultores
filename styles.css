@@ -533,7 +533,7 @@ h3 {
 
   .titlejumbotext {
     font-size: 30px;
-    grid-area: 1 / 2 / 2/ 5;
+    grid-area: 1 / 1 / 2/ 6;
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -541,11 +541,13 @@ h3 {
     padding-right: 0px;
     padding-top: 0px;
     margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .jumbosubtext {
     display: grid;
-    text-align: left;
+    text-align: center;
     align-self: flex-start;
     grid-area: 2 / 1 / 4 / 6;
     font-size: 17px;
