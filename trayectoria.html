@@ -54,6 +54,9 @@
   #menunav {
     display: none;
   }
+  .textsomos{
+    margin-top: 5px;
+  }
 
   #menuhide {
     display: grid;
@@ -112,7 +115,13 @@
     padding-right: 30px;
 
   }
+ul {
+  margin-top: 5px;
+  list-style-type: square;
+    justify-self: center;
+    margin-right: 10px;
 
+}
   .subtitle {
     align-self: self-start;
     grid-area: 2 / 10 / 3 / 14;
@@ -125,7 +134,7 @@
 
   .lista1 {
     padding-left: 20px;
-    grid-area: 3 / 1 / 6 / 7;
+    grid-area: 2 / 1 / 6 / 7;
     margin-right: 15px;
 
   }
@@ -154,13 +163,19 @@
 }
 .tituloseccion{
  margin: 15px;
+ margin-bottom: 20px;
+ font-weight: 600;
+ font-size: 18px;
 }
   .lista5 {
-    grid-area: 20 / 1 / 23 / 14;
+    grid-area: 21 / 1 / 23 / 14;
   }
 
   .hrcolor {
     grid-area: 2 / 1 / 3 / 4;
+  }
+  .rrssico{
+    display: none;
   }
 
 
@@ -285,22 +300,23 @@
     <h1 class="headtrayect">Trayectoria Profesional</h1>
     <hr class="hr_color">
     <div class="tarjetabogado">
-      <h4 class="titletrayect" style="font-family: 'Montserrat', sans-serif; font-weight:500;">Oscar Fuentes</h4>
+      <h4 class="titletrayect" style="font-family: 'Montserrat', sans-serif; font-weight:500;">Oscar Fuentes J.-</h4>
       <img class="imgtrayect" src="./public/assets/img/Trayectoriaprofesional.jpg">
       <span class="subtitle" style="font-family: 'Montserrat', sans-serif; font-weight:300;">Abogado de la Universidad
         del Desarrollo de Concepción</span>
       <div class="lista1">
-        <strong class="tituloseccion">Formación Profesional</strong>
+        <span class="tituloseccion">1. Formación Profesional</span>
         <ul id="texttrayect1">
-          <li>Abogado, Corte Suprema de Justicia de Chile (enero 2012)</li>
-          <li>Magíster en Derecho de la Empresa, mención Derecho Tributario (noviembre 2013)</li>
-          <li>Curso sobre Reforma Tributaria y su aplicación (noviembre 2015)</li>
-          <li>Diplomado en Tributación Nacional para profesionales del Sector Público (octubre 2018)</li>
-          <li>Diplomado en Tributación Avanzada (diciembre 2022)</li>
+          <span style="font-weight: 500;">Formación Universitaria</span>
+          <li>Abogado, Corte Suprema de Justicia, UDD Concepción. (enero 2012)</li>
+          <li>Magíster en Derecho de la Empresa, mención Derecho Tributario, UDD Conepción. (noviembre 2013)</li>
+          <li>Curso sobre Reforma Tributaria y su aplicación, USACH. (noviembre 2015)</li>
+          <li>Diplomado en Tributación Nacional para profesionales del Sector Público, PUC Valparaíso. (octubre 2018)</li>
+          <li>Diplomado en Tributación Avanzada, UDD Santiago. (diciembre 2022)</li>
         </ul>
       </div>
       <div class="lista2">
-        <strong class="tituloseccion">Formación técnica impartida por el SII</strong>
+        <span class="tituloseccion">Formación técnica impartida por el SII</span>
         <ul id="texttrayect2">
           <li>Actuaciones administrativas ante Tribunales Tributarios y Aduaneros (diciembre 2014)</li>
           <li>Introducción a la Reforma Tributaria Ley Nº 20.780 (diciembre 2014)</li>
@@ -331,7 +347,7 @@
         </ul>
       </div>
       <div class="lista3">
-        <strong class="tituloseccion">Formación telemática de interés personal</strong>
+        <span class="tituloseccion">Formación telemática de interés personal</span>
         <ul id="texttrayect3">
           <li>Gestión de estudios jurídicos (diciembre 2020)</li>
           <li>Herramientas de contabilidad financiera básica (diciembre 2020)</li>
@@ -347,8 +363,8 @@
 
       <div class="lista4">
         <ul id="texttrayect4">
-          <strong  class="tituloB, tituloseccion">2. Experiencia Profesional</strong> <br>
-          <strong  class="tituloseccion">Docencia en la Universidad del Desarrollo de Concepción:</strong>
+          <span  class="tituloB, tituloseccion">2. Experiencia Profesional</span> <br>
+          <span  class="tituloseccion">Docencia en la Universidad del Desarrollo de Concepción:</span>
           </li>
           <li>Alumno ayudante “Historia Constitucional de Chile” (2005), Facultad de Derecho</li>
           <li>Alumno ayudante “Derecho Político” (2006), Facultad de Derecho</li>
@@ -358,13 +374,14 @@
           <li>Profesor ayudante “Derecho Procesal II” (2012), Facultad de Derecho</li>
           <li>Profesor ayudante “Derecho Tributario II” (2012), Facultad de Derecho</li>
         </ul>
-
+       </div>
+<div class="lista5">
         <ul id="texttrayect5">
-          <strong class="tituloseccion">Docencia al interior del Servicio de Impuestos Internos</strong>
+          <span class="tituloseccion">Docencia al interior del Servicio de Impuestos Internos</span>
           <li>Miembro del Comité Regional de Capacitación de Puerto Montt (2020 – 2023)</li>
           <li>Monitor del Programa Nacional de Formación Institucional (2021 – 2023)</li>
         </ul>
-        <strong class="tituloseccion"> Carrera como Abogado y Consultor Tributario</strong>
+        <span class="tituloseccion"> Carrera como Abogado y Consultor Tributario</span>
         <ul>
           <li>Primer trabajo: Sandoval y Latsague abogados, Concepción (junio-2011 / junio 2013)</li>
           <li>Segundo trabajo: Tesorería General de la República, Temuco y Puerto Montt (junio 2013 / septiembre 2014)
@@ -373,8 +390,8 @@
         </ul>
         </ul>
       </div>
-    </div>
-    </div>
+      </div>
+
   </body>
 
   <footer class="futer">

@@ -100,25 +100,6 @@ a:hover {
   contain: content;
   padding: 15px;
 }
-
-/* .izqjumbo {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  background-image: url(./public/assets/img/bannerjumbo.jpg);
-  background-position: bottom;
-  background-size: cover;
-} */
-/* 
-.derjumbo {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-} */
-
 .titlejumbotext {
   display: grid;
   font-family: 'Oswald', sans-serif;
@@ -130,6 +111,7 @@ a:hover {
   justify-self: right;
   padding-right: 90px;
   margin-left: 75px;
+  padding-top: 30px;
 }
 
 #botonbody {
@@ -208,7 +190,7 @@ h2 {
 
 .product {
   display: flex;
-  height: 400px;
+  height: 350px;
   width: 300px;
   flex-direction: column;
   align-items: center;
@@ -246,14 +228,15 @@ h2 {
 .productext {
   font-family: Quicksand;
   max-width: 300px;
-  text-align: left;
+  text-align: center;
   margin-right: 15px;
   margin-left: 15px;
 
 }
 
 #textsii {
-  text-align: left;
+  text-align: center;
+
   font-size: 17px;
   font-weight: 500;
 }
@@ -453,10 +436,11 @@ h3 {
   width: 4vw;
   height: auto;
   object-fit: cover;
+  display: none;
 }
 
 /* QUERY */
-@media screen and (max-width: 857px) {
+@media screen and (max-width: 915px) {
 
   .contactnav {
     display: grid;
@@ -530,7 +514,7 @@ h3 {
   }
 
   .titlejumbotext {
-    font-size: 30px;
+    font-size: 40px;
     grid-area: 1 / 1 / 2/ 6;
     text-align: center;
     justify-self: center;
@@ -564,6 +548,7 @@ h3 {
     align-items: center;
     height: 40px;
     padding-bottom: 3px;
+    margin-bottom: 30px;
 
   }
 
@@ -591,15 +576,15 @@ h3 {
     padding: 10px;
     padding-right: 15px;
     padding-left: 15px;
-    place-items: center;
+    justify-self: center;
   }
 
   .product {
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 370px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     box-shadow: 10px 10px 10px rgba(40, 40, 40, 0.2);
     padding-bottom: 20px;
   }
@@ -757,3 +742,19 @@ h3 {
     width: 30%;
   }
 }
+@media screen and (max-width: 915px) and (min-width: 531px) {
+.titlejumbotext{
+  font-size: 50px;
+} 
+  .jumbosubtext{
+  grid-area: 2 / 1 / 4 / 4;
+  line-height: 30px;
+  text-align: left;
+  margin-right: 30px;
+}
+#botonbody{
+  grid-area: 2 / 4 / 3 / 6 ;
+  width: 100%;
+ margin-right: 90px;
+}
+} 
