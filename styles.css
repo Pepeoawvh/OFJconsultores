@@ -3,7 +3,7 @@ body {
   background-color: #f8f8f8;
 }
 
-#wsp {
+#wsp{
   color: white;
   position: fixed;
   bottom: 0;
@@ -19,6 +19,9 @@ body {
   transition: transform 0.7s;
   box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.2);
 
+}
+.fab{
+  color: white;
 }
 
 #wsp:hover {
@@ -736,10 +739,10 @@ h3 {
   }
 
   .rrssico {
-    display: grid;
-    justify-self: right;
+    display: none
+    /* justify-self: right;
     margin-left: 50px;
-    width: 30%;
+    width: 30%; */
   }
 }
 @media screen and (max-width: 915px) and (min-width: 531px) {

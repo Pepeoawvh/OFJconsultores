@@ -1,3 +1,4 @@
+// boton menu
 const botonmenu=document.getElementById("botonmenu")
 const menuOcultable=document.getElementById("menuOcultable")
 
@@ -6,6 +7,7 @@ function togglemenu() {
 }
 
 botonmenu.addEventListener("click",togglemenu);
+// fin boton menu
 
 function() {
     // get all data in form and return object
@@ -112,3 +114,7 @@ function() {
       }
     }
   } ();
+
+
+
+  
