@@ -37,9 +37,6 @@
         Tesorería General de la República y luego como asesor del Servicio de Impuestos Internos</span>
         <button class="boton" id="botonbody" type="submit"><a id="texbotonbody" href="#forminicio">Pide tu cita</a></button>
       
-      <!-- <img src="./public/assets/img/bannerjumbo.jpg" alt="" class="imgjumbo"> -->
-    <!-- </div> -->
-    <!-- <div class="izqjumbo"></div> -->
   </div>
   <div class="presentacion">
     <h2 class="titulopresentacion">Experto en Derecho Tributario</h2>
@@ -47,19 +44,19 @@
   </div>
   <div class="product-container" id="galeria">
     <div class="product">
-      <!--Bulldog-->
+      <!--SII-->
       <img class=productimg id="logosii" src="./public/assets/img/sii.jpg" alt="Producto 1">
       <span class="productext" id="textsii">Asesoró actuaciones como requerimientos del art. 59 CT, citaciones del art. 63 CT, y liquidaciones
         de impuestos.</span>
     </div>
     <div class="product">
-      <!--Fox Terrier-->
+      <!--TGR-->
       <img class=productimg id="logotgr" src="./public/assets/img/TGR.png" alt="Producto 2">
       <span class="productext" id="texttgr"> Gestionó la cobranza judicial, supervisó el proceso de cobro, y representó al Fisco de Chile
         conforme al artículo 186 del CT.</span>
     </div>
     <div class="product">
-      <!--Rottweiler-->
+      <!--DEF-->
       <img class=productimg id="defensaimg" src="./public/assets/img/mazochico.jpg" alt="Producto 3">
       <span class="productext" id="textlitigio"> Defensor Penal Tributario: ejerció como Secretario del Comité de análisis de conductas constitutivas de
         delito tributario e intervino en procesos penales por IVA, renta, y comercio ilegal.
@@ -105,6 +102,10 @@
             placeholder="Correo Electrónico" />
         </fieldset>
 
+        <fieldset class="pure-group">
+          <input class="input" id="telefono" name="telefono" type="tel" value="" required
+            placeholder="Telefono +56 x xxxx xxxx"  oninput="this.value = this.value.replace(/[^0-9]/g, '');"/>
+        </fieldset>
 
         <fieldset class="pure-group">
           <select class="input" id="message" name="mensaje">
