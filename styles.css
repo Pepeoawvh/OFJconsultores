@@ -441,12 +441,14 @@ h3 {
   display: grid;
   height: auto;
   object-fit: cover;
-  
 }
 
 /* QUERY */
 @media screen and (max-width: 915px) {
 
+  #wsp{
+    margin-bottom: 50px;
+  }
   .contactnav {
     display: grid;
     height: 100%;
@@ -738,13 +740,15 @@ h3 {
 
   .rrss {
     justify-items: center;
+    align-items: cen;
+  }
+  .footcontact{
+    align-self: center;
   }
 
   .rrssico {
-    display: none
-    /* justify-self: right;
-    margin-left: 50px;
-    width: 30%; */
+    justify-self: right;
+    
   }
 }
 @media screen and (max-width: 915px) and (min-width: 531px) {
@@ -763,9 +767,8 @@ h3 {
  margin-right: 90px;
 }
 .rrssico {
-  display: none
-  /* justify-self: right;
+  justify-self: right;
   margin-left: 50px;
-  width: 30%; */
+  width: 30%;
 }
 } 

@@ -90,7 +90,7 @@
       
       <div class="form-elements">
         <fieldset class="pure-group">
-          <input class="input" name="name" placeholder="Nombre del Contribuyente" />
+          <input class="input" name="name" placeholder="Nombre del Contribuyente" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '');">
         </fieldset>
 
         <fieldset class="pure-group">
