@@ -762,6 +762,9 @@ h3 {
     justify-self: right;
     
   }
+  .numerotel{
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 915px) and (min-width: 531px) {
 .titlejumbotext{
