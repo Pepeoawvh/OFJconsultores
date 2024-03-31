@@ -52,8 +52,22 @@ a:hover {
   /*alinear elementos en eje vertical centro*/
   column-gap: 10px;
   justify-content: space-around;
-  background-color: #bae0f7
+  background-color: #bae0f7;
+  animation: fadeTop 1s ease 0s 1;
 }
+
+@keyframes fadeTop {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 
 #menunav {
   display: none;
@@ -102,7 +116,19 @@ a:hover {
   grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
   contain: content;
   padding: 15px;
+  animation: myAnim 3s ease 0s 1 normal forwards;
+
 }
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 .titlejumbotext {
   display: grid;
   font-family: 'Oswald', sans-serif;
@@ -291,7 +317,7 @@ h2 {
 .divlistact {
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding-left: 30px;
   margin-top: 20px;
   align-items: center;
 }
@@ -394,7 +420,19 @@ select {
   border-radius: 5px;
   text-align: center;
 }
+#enviar:hover {
+  animation: scaleUp 1s ease 0s 1 normal forwards;
+  
+}
+@keyframes scaleUp {
+	0% {
+		transform: scale(1);
+	}
 
+	100% {
+		transform: scale(1.1);
+	}
+}
 .thankyou_message h2 {
   display: grid;
   grid-template-rows: 1fr 1fr;
